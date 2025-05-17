@@ -1,5 +1,14 @@
 :root {
-    --bs-primary : #28a745; /* Vert au lieu du bleu par défaut */
+    --bs-primary : #F23D2E;
+    --bs-primary-100: #FFE3E1; /* très clair */
+  --bs-primary-200: #FFCDC9;
+  --bs-primary-300: #F23D2E;
+ --bs-primary-500: #F23D2E; /* couleur de base */
+  --bs-primary-600: #E03122;
+  --bs-primary-700: #BD2518;
+  --bs-primary-800: #9C2218;
+
+  --bs-secondary: #00BBF9;
      /* --bs-success: #votre-couleur-success;
   --bs-info: #votre-couleur-info; */
   --bs-warning: #F23D2E;
@@ -20,22 +29,36 @@
 .text-secondary { color: var(--bs-secondary) !important; }
 .text-warning { color: var(--bs-warning) !important; }
 
-.bricolage-grotesque {
+/* .bricolage-grotesque {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+} */
+
+h1,h2,h3,h4{
+  font-family: "Bricolage Grotesque", sans-serif;;
 }
 
 h1{
   font-size: 32px;
+  font-weight: 900;
+}
+h2{
+  font-size: 32px;
+  font-weight: 900;
 }
 body{
     background-color: #06080F ;
-    font-family: Helvetica;
+    font-family: "Figtree",Helvetica;
     color: #fff;
+}
+
+.btn{
+  color:#fff;
+  /* background-color: var(--bs-primary); */
 }
 
 /* Vector 1 */
@@ -57,7 +80,4 @@ body{
 }
 .nav-item{
   z-index:2;
-}
-.btn{
-  color:#fff;
 }
