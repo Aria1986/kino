@@ -8,10 +8,12 @@
   --bs-primary-700: #BD2518;
   --bs-primary-800: #9C2218;
 
+  /* --bs-neutral-400:#818182; */
+
   --bs-secondary: #00BBF9;
      /* --bs-success: #votre-couleur-success;
   --bs-info: #votre-couleur-info; */
-  --bs-warning: #F23D2E;
+  /* --bs-warning: #F23D2E; */
  /* --bs-danger: #votre-couleur-danger;
   --bs-light: #votre-couleur-light; */
   --bs-dark: #06080F;
@@ -28,15 +30,6 @@
 .text-primary { color: var(--bs-primary) !important; }
 .text-secondary { color: var(--bs-secondary) !important; }
 .text-warning { color: var(--bs-warning) !important; }
-
-/* .bricolage-grotesque {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
 
 h1,h2,h3,h4{
   font-family: "Bricolage Grotesque", sans-serif;;
@@ -67,13 +60,15 @@ h2{
   font-size: 16px;
   font-weight: 500;
 }
-
+p{
+  color:#818182;
+  font-size: 18px;
+  font-weight: 400;
+}
 body{
     background-color: #06080F ;
     font-family: "Figtree",Helvetica;
     color: #fff;
-    font-size: 18px;
-    font-weight: 400;
 }
 
 i{
@@ -105,15 +100,15 @@ i{
   z-index:2;
 }
 
-/* A propos */
+/*------------- A propos */
 
 /* icones decoration pour grands ecrans */
 #line1{
   position: absolute;
   width: 9.68px;
   height: 0px;
-  left: 1342.43px;
-  top: 301px;
+  right:33px;
+  bottom: 296px;
   background: #E8F1FE;
   /* Colors/neutral/0 */
   border: 2.42818px solid #FFFFFF;
@@ -124,13 +119,17 @@ position: absolute;
 width: 15.87px;
 height: 0.47px;
 right:0px;
-top: 306.01px;
+bottom: 290px;
 background: #E8F1FE;
 /* Colors/neutral/0 */
 border: 2.42818px solid #FFFFFF;
 transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 }
-
+#starWithLines{
+  position:absolute;
+  right:0px;
+  bottom:260px;
+}
 #star1{
   position:absolute;
   left:35px;
@@ -154,4 +153,31 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   z-index: 2;
 }
 
+/* carte défis */
 
+#carteDefis{
+  max-width: 417px;
+  max-height:283px;
+  background: #20232B;
+  backdrop-filter: blur(9.1px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 30px;
+  position:absolute;
+  right:28px;
+  bottom:0px;
+  z-index:1;
+}
+
+#carteFilms{
+  max-width: 384px;
+  max-height:283px;
+  border-radius: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+  #carteDefis,#carteFilms{
+    height:283px;
+  }
+}
