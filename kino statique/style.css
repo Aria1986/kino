@@ -76,6 +76,9 @@ body{
     font-weight: 400;
 }
 
+i{
+  color: #fff;
+}
 .btn{
   color:#fff;
   /* background-color: var(--bs-primary); */
@@ -101,3 +104,54 @@ body{
 .nav-item{
   z-index:2;
 }
+
+/* A propos */
+
+/* icones decoration pour grands ecrans */
+#line1{
+  position: absolute;
+  width: 9.68px;
+  height: 0px;
+  left: 1342.43px;
+  top: 301px;
+  background: #E8F1FE;
+  /* Colors/neutral/0 */
+  border: 2.42818px solid #FFFFFF;
+  transform: matrix(-0.07, 1, 1, 0.07, 0, 0);
+}
+#line2{
+position: absolute;
+width: 15.87px;
+height: 0.47px;
+right:0px;
+top: 306.01px;
+background: #E8F1FE;
+/* Colors/neutral/0 */
+border: 2.42818px solid #FFFFFF;
+transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
+}
+
+#star1{
+  position:absolute;
+  left:35px;
+  bottom:100px;
+}
+#star2{
+  position:absolute;
+  left:20px;
+  bottom:12px;
+}
+#ticket1{
+  position:absolute;
+  left:52px;
+  bottom:14px;
+  z-index: 3;
+}
+#ticket2{
+  position:absolute;
+  left:85px;
+  bottom:0px;
+  z-index: 2;
+}
+
+
