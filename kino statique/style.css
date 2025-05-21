@@ -34,17 +34,13 @@
 .text-warning { color: var(--bs-warning) !important; }
 
 h1,h2,h3,h4{
-  font-family: "Bricolage Grotesque", sans-serif;;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 h1{
   font-size: 46px;
   font-weight: 800;
 }
-/* h2{
-  font-size: 18px;
-  font-weight: 500;
-} */
 
 h2{
   font-size: 36px;
@@ -53,6 +49,7 @@ h2{
 .text-SBlod{
   font-size: 24px;
   font-weight: 700;
+  color:#fff;
 }
 .text-xs{
   font-size: 18px;
@@ -64,13 +61,22 @@ h2{
 }
 p{
   color:#818182;
+  font-family: "Figtree",Helvetica;
   font-size: 18px;
   font-weight: 400;
 }
+.fs-1 {
+  font-size: 48px !important;
+}
+@media (min-width: 768px) {
+  .fs-1 {
+  font-size: 98px !important;
+}
+}
 body{
-    background-color: #06080F ;
-    font-family: "Figtree",Helvetica;
+    background-color: #06080F ;  
     color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 i{
@@ -106,6 +112,7 @@ i{
 
 #aProposRight{
   min-height: 527px;
+  max-width: 621px;
 }
 
 /* icones decoration pour grands ecrans */
@@ -176,8 +183,6 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   border-radius: 30px;
 }
 
-
-
 @media (min-width: 768px) {
   #carteDefis,#carteFilms{
     height:283px;
@@ -194,3 +199,5 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
     z-index:1;
   }
 }
+
+/* ---------Infos essentielles */
