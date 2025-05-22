@@ -204,6 +204,15 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 }
 
 /* ---------Infos essentielles */
+
+@media (min-width: 768px) {
+  #btnEnvoiFilm2{
+      position:absolute;
+      right:48px;
+      top:48px;
+    }
+}
+
 @media (min-width: 1200px) {
   #defisLeft{
     flex: 0 0 768px; max-width: 768px;
@@ -211,4 +220,5 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   #defisRight{
     flex: 0 0 424px; max-width: 424px;
   }
+
 }
