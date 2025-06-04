@@ -1,0 +1,32 @@
+:root {
+  /* couleur primary et ses gradients */
+  --bs-primary : #F23D2E;
+  --bs-primary-100: #FFE3E1; 
+  --bs-primary-200: #FFCDC9;
+  --bs-primary-300: #F23D2E;
+  --bs-primary-600: #E03122;
+  --bs-primary-700: #BD2518;
+  --bs-primary-800: #9C2218;
+
+ 
+
+  /* couleur secondary et ses gradients */
+  --bs-secondary: #00BBF9;
+  --bs-secondary-50: #effaff;
+  --bs-secondary-100: #def4ff;
+  --bs-secondary-200: #b6ebff;
+  --bs-secondary-600: #0095d4;
+  --bs-secondary-700: #0077ab;
+  --bs-secondary-800: #00648d;
+
+  /* couleur tertiary et ses gradients */
+   --bs-neutral-200:#d0d0d1;
+   --bs-neutral-300:#b0b0b0;
+   --bs-neutral-400:#818182;
+   --bs-neutral-600:#5d5d5d;
+   --bs-neutral-900:#191b23;
+  
+  --bs-neutral:#20232B;
+
+  --bs-dark: #06080F;
+}

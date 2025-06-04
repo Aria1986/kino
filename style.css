@@ -1,29 +1,9 @@
-:root {
-    --bs-primary : #F23D2E;
-    --bs-primary-100: #FFE3E1; /* très clair */
-  --bs-primary-200: #FFCDC9;
-  --bs-primary-300: #F23D2E;
- --bs-primary-500: #F23D2E; /* couleur de base */
-  --bs-primary-600: #E03122;
-  --bs-primary-700: #BD2518;
-  --bs-primary-800: #9C2218;
 
-  /* --bs-neutral-400:#818182; */
 
-  --bs-secondary: #00BBF9;
-  --bs-tertiary:#20232B;
-     /* --bs-success: #votre-couleur-success;
-  --bs-info: #votre-couleur-info; */
-  /* --bs-warning: #F23D2E; */
- /* --bs-danger: #votre-couleur-danger;
-  --bs-light: #votre-couleur-light; */
-  --bs-dark: #06080F;
-}
-
-/* Personnalisation des classes basées sur ces variables */
+/* Personnalisation des classes basées sur les variables */
 .bg-primary { background-color: var(--bs-primary) !important; }
 .bg-secondary { background-color: var(--bs-secondary) !important; }
-.bg-tertiary { background-color: var(--bs-tertiary) !important; }
+.bg-neutral { background-color: var(--bs-neutral) !important; }
 .bg-dark { background-color: var(--bs-dark) !important; }
 .bg-warning { background-color: var(--bs-warning) !important; }
 
