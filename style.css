@@ -1,75 +1,13 @@
+/*  Variables globales */
+@import url('_variables.css');
+/*  Styles de base des éléments HTML */
+@import url('_base.css');
+@import url('_typography.css');
+/*  Styles des composants */
+@import url('_buttons.css');
+@import url('_forms.css');
 
-
-/* Personnalisation des classes basées sur les variables */
-.bg-primary { background-color: var(--bs-primary) !important; }
-.bg-secondary { background-color: var(--bs-secondary) !important; }
-.bg-neutral { background-color: var(--bs-neutral) !important; }
-.bg-dark { background-color: var(--bs-dark) !important; }
-.bg-warning { background-color: var(--bs-warning) !important; }
-
-/* Répétez pour les autres classes .bg-* */
-
-.text-primary { color: var(--bs-primary) !important; }
-.text-secondary { color: var(--bs-secondary) !important; }
-.text-warning { color: var(--bs-warning) !important; }
-
-h1,h2,h3,h4{
-  font-family: "Bricolage Grotesque", sans-serif;
-}
-
-h1{
-  font-size: 46px;
-  font-weight: 800;
-}
-
-h2{
-  font-size: 36px;
-  font-weight: 600;
-}
-.text-SBlod{
-  font-size: 24px;
-  font-weight: 700;
-  color:#fff;
-}
-.text-xs{
-  font-size: 18px;
-  font-weight: 600;
-}
-.text-xxsMedium{
-  font-size: 16px;
-  font-weight: 500;
-}
-p{
-  color:#818182;
-  font-family: "Figtree",Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-}
-.fs-1 {
-  font-size: 48px !important;
-}
-@media (min-width: 768px) {
-  .fs-1 {
-  font-size: 98px !important;
-}
-}
-body{
-    background-color: #06080F ;  
-    color: #fff;
-    font-family: "Bricolage Grotesque", sans-serif;
-}
-
-i{
-  color: #fff;
-}
-.btn{
-  color:#fff;
-  /* background-color: var(--bs-primary); */
-}
-
-.rounded{
-  border-radius: 30px !important;
-}
+/* ----------- style section par section */
 /* Vector 1 */
 #fondDegrade{
     position: absolute;
@@ -87,11 +25,16 @@ i{
     flex-grow: 0;
     z-index: 1;
 }
+
+/* paramètres navbar */
 .nav-item{
   z-index:2;
 }
 
 /*------------- A propos */
+
+/* soulignage notre devise */
+
 
 #aProposRight{
   min-height: 527px;

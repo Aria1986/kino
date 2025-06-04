@@ -1,0 +1,39 @@
+/* paramètres du texte */
+h1,h2,h3,h4{
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+h1{
+  font-size: 46px;
+  font-weight: 800;
+}
+h2{
+  font-size: 36px;
+  font-weight: 600;
+}
+.text-SBlod{
+  font-size: 24px;
+  font-weight: 700;
+  color:#fff;
+}
+.text-xs{
+  font-size: 18px;
+  font-weight: 600;
+}
+.text-xxsMedium{
+  font-size: 16px;
+  font-weight: 500;
+}
+p{
+  color:#818182;
+  font-family: "Figtree",Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+}
+.fs-1 {
+  font-size: 48px !important;
+}
+@media (min-width: 768px) {
+  .fs-1 {
+  font-size: 98px !important;
+}
+}

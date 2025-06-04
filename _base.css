@@ -1,0 +1,19 @@
+/* Personnalisation des classes basées sur les variables */
+/* couleur de fond */
+.bg-primary { background-color: var(--bs-primary) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; }
+.bg-neutral { background-color: var(--bs-neutral) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; }
+/* couleur texte */
+.text-primary { color: var(--bs-primary) !important; }
+.text-secondary { color: var(--bs-secondary) !important; }
+
+body{
+    background-color: #06080F ;  
+    color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+i{
+  color: #fff;
+}
