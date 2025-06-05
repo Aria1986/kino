@@ -2,6 +2,7 @@
 .btnn{
   font-size: 16px;
   font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
   color:#fff;
   background-color: var(--bs-primary);
   border-radius: 16px ;

@@ -35,7 +35,6 @@
 
 /* soulignage notre devise */
 
-
 #aProposRight{
   min-height: 527px;
   max-width: 621px;
@@ -69,25 +68,10 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   right:0px;
   bottom:260px;
 }
-#star1{
-  position:absolute;
-  left:35px;
-  bottom:100px;
-}
-#star2{
+
+#ticketsE{
   position:absolute;
   left:20px;
-  bottom:12px;
-}
-#ticket1{
-  position:absolute;
-  left:52px;
-  bottom:14px;
-  z-index: 3;
-}
-#ticket2{
-  position:absolute;
-  left:85px;
   bottom:0px;
   z-index: 2;
 }
