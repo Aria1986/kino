@@ -30,3 +30,6 @@ a{
 a:hover{
   color:white;
 }
+.z-10{
+  z-index:10;
+}
