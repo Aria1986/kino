@@ -142,5 +142,5 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 
 #soireeLeft{
   max-width: 754px;
-  max-height: 596px;
+  /* max-height: 596px; */
 }
