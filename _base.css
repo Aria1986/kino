@@ -7,7 +7,7 @@
 /* couleur texte */
 .text-primary { color: var(--bs-primary) !important; }
 .text-secondary { color: var(--bs-secondary) !important; }
-
+.text-neutral-300 { color: var(--bs-neutral-300) !important; }
 body{
     background-color: #06080F ;  
     color: #fff;
