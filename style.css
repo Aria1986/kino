@@ -1,9 +1,7 @@
-/*  Variables globales */
+
 @import url('_variables.css');
-/*  Styles de base des éléments HTML */
 @import url('_base.css');
 @import url('_typography.css');
-/*  Styles des composants */
 @import url('_buttons.css');
 @import url('_forms.css');
 
