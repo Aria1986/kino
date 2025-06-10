@@ -17,3 +17,16 @@ body{
 i{
   color: #fff;
 }
+.rounded{
+  border-radius: 30px!important;
+}
+div,.container{
+   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:white;
+}

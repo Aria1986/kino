@@ -23,7 +23,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* paramètres navbar */
@@ -143,3 +143,8 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
     width:454px;
   }
 } */
+
+#soireeLeft{
+  max-width: 754px;
+  max-height: 596px;
+}
