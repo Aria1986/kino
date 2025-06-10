@@ -1,9 +1,9 @@
 
-@import url('_variables.css');
-@import url('_base.css');
-@import url('_typography.css');
-@import url('_buttons.css');
-@import url('_forms.css');
+@import url('variables.css');
+@import url('base.css');
+@import url('typography.css');
+@import url('buttons.css');
+@import url('forms.css');
 
 /* ----------- style section par section */
 /* Vector 1 */
