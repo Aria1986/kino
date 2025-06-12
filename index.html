@@ -118,8 +118,8 @@
     </div>
 
     <!-- Infos essentielles -->
-    <section id="defi" class="container-fluid bg-neutral py-3 ">
-        <div class="container" style="z-index:0;flex: 0 0 1312px; max-width: 1312px;">
+    <div id="defi" class="container-fluid bg-neutral py-3 ">
+        <sction class="container" style="z-index:0;flex: 0 0 1312px; max-width: 1312px;">
             <div class="py-4 px-2 m-3">
                 <h2>Faites votre film, on le projette !</h2>
                 <p>Vous avez 2 mois pour créer un court-métrage qui respecte les critères du défi. Une fois terminé, envoyez-le avant la deadline : s&apos;il arrive en retard, il ne sera pas sélectionné. Le film doit durer moins de 5 minutes (génériques inclus) et utiliser une musique libre de droits.Venez ensuite découvrir votre création gratuitement sur grand écran lors de la soirée de projection et invitez vos amis !</p>
@@ -191,225 +191,230 @@
                     </a>
                 </div>
             </div>
-            <!-- soiree projection -->
-            <section class="bg-dark rounded mx-auto my-4 p-4 position-relative d-flex flex-column flex-md-row gap-3 " style="z-index:0;flex: 0 0 1312px; max-width: 1312px;">
-                <span id="popCorn" class="position-absolute end-0 top-0 d-none d-lg-block">
-                    <svg width="198" height="210" >
-                        <use href="icons.svg#popcorn" />
-                    </svg>
-                </span>
-                <!-- hide text on big screen because he has a different position -->
-                <p class="d-block d-md-none text-SBlod text-center  p-3"> Prochaine soirée de projection</p>
-                <img class="mx-md-3 my-auto rounded img-fluid" src="assets/img/projection.png" alt="soiree projection" />
-                <div  class="p-4 w-100">
-                    <p class="d-none d-md-block text-SBlod text-start p-3"> Prochaine soirée de projection</p>
-                    <div class="d-flex flex-column gap-3 w-full my-auto" >
-                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
-                            <svg width="48" height="49" >
+        </sction>
+        <!-- soiree projection -->
+        <section class="bg-dark rounded mx-auto my-4 p-4 position-relative d-flex flex-column flex-md-row gap-3 " style="z-index:0;flex: 0 0 1312px; max-width: 1312px;">
+            <span id="popCorn" class="position-absolute end-0 top-0 d-none d-lg-block">
+                <svg width="198" height="210" >
+                    <use href="icons.svg#popcorn" />
+                </svg>
+            </span>
+            <!-- hide text on big screen because he has a different position -->
+            <p class="d-block d-md-none text-SBlod text-center  p-3"> Prochaine soirée de projection</p>
+            <img class="mx-md-3 my-auto rounded img-fluid" src="assets/img/projection.png" alt="soiree projection" />
+            <div  class="p-4 w-100">
+                <p class="d-none d-md-block text-SBlod text-start p-3"> Prochaine soirée de projection</p>
+                <div class="d-flex flex-column gap-3 w-full my-auto" >
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
+                        <svg width="48" height="49" >
+                            <use href="icons.svg#date" />
+                        </svg>                           
+                        <div>
+                            <span class="text-xs">Date</span>
+                            <p class="m-0">A venir</p>
+                        </div>
+                    </div>
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
+                       <svg width="48" height="48" >
+                            <use href="icons.svg#lieu" />
+                        </svg>  
+                        <div>
+                            <span class="text-xs">Lieu : Maison de la Vie Associative et Citoyenne</span>
+                            <p class="m-0">6 rue Berthe de Boissieaux, 38000 Grenoble</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- equipe ou aide -->
+        <section>
+            <div class="py-4 px-2 m-3">
+                <h2>Besoin d&apos;une équipe ou de conseils pour vous lancer ?</h2>
+                <p>KinoGrenoble organise plusieurs rendez-vous et outils pour échanger, trouver une équipe, partager des idées et mener à bien vos projets.</p>
+            </div>
+            <div class="bg-dark rounded m-auto  p-3 p-md-5 position-relative d-flex flex-md-row gap-4" >
+                <div class="d-flex flex-column gap-3 col-12 col-md-6">
+                    <div class="d-flex flex-row align-items-center gap-2">
+                        <svg class="d-none d-md-block" width="32" height="23" fill="white">
+                            <use href="icons.svg#handshake" />
+                        </svg>
+                        <p class="text-SBlod py-3 m-0">Le marché des petits producteurs</p>
+                    </div>
+                    
+                    <p>Il s&apos;agit d&apos;un rendez-vous, à mi parcours du défi, pour échanger autour d&apos;un verre, trouver une équipe, partager des idées et avancer ensemble ! </p>
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
+                        <svg width="48" height="49" >
                                 <use href="icons.svg#date" />
-                            </svg>                           
+                            </svg>
                             <div>
                                 <span class="text-xs">Date</span>
                                 <p class="m-0">A venir</p>
                             </div>
                         </div>
                         <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
-                           <svg width="48" height="48" >
+                            <svg width="48" height="48" >
                                 <use href="icons.svg#lieu" />
-                            </svg>  
+                            </svg>        
                             <div>
-                                <span class="text-xs">Lieu : Maison de la Vie Associative et Citoyenne</span>
-                                <p class="m-0">6 rue Berthe de Boissieaux, 38000 Grenoble</p>
+                                <span class="text-xs">Lieu </span>
+                                <p class="m-0">A venir</p>
                             </div>
                         </div>
+                </div>
+                <div class="d-none d-md-block m-auto p-0">
+                    <img class="img-fluid" src="assets/img/marche.png" alt="marche des producteurs" />
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row my-4 gap-4 " >
+                <div id="soireeLeft" class="bg-dark rounded p-4 col-12 col-md-6 ">
+                    <div class="d-flex gap-2 align-items-center pb-3">
+                        <svg class="d-none d-md-block" width="32" height="33" fill="white">
+                            <use href="icons.svg#tchin" />
+                        </svg>
+                        <p class="text-SBlod m-0">Une soirée chaque mardi</p>
                     </div>
-                </div>
-            </section>
-
-            <!-- equipe ou aide -->
-            <section>
-                <div class="py-4 px-2 m-3">
-                    <h2>Besoin d&apos;une équipe ou de conseils pour vous lancer ?</h2>
-                    <p>KinoGrenoble organise plusieurs rendez-vous et outils pour échanger, trouver une équipe, partager des idées et mener à bien vos projets.</p>
-                </div>
-                <div class="bg-dark rounded m-auto  p-3 p-md-5 position-relative d-flex flex-md-row gap-4" >
-                    <div class="d-flex flex-column gap-3 col-12 col-md-6">
-                        <div class="d-flex flex-row align-items-center gap-2">
-                            <svg class="d-none d-md-block" width="32" height="23" fill="white">
-                                <use href="icons.svg#handshake" />
+                    <p>Chaque mardi soir, un rendez-vous a lieu dans un bar grenoblois pour échanger. L&apos;heure et le lieu sont annoncés en story sur Instagram et Facebook. </p>
+                    <div class="text-center "> 
+                        <img class="img-fluid" src="assets/img/marche.png" alt="photo soiree" />   
+                    </div> 
+                    <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-around col-12 py-3 mt-2">
+                        <button class="btnn btn-neutral icon-side w-100">
+                            <svg  width="17" height="17" fill="white">
+                                <use href="icons.svg#instagram" />
                             </svg>
-                            <p class="text-SBlod py-3 m-0">Le marché des petits producteurs</p>
-                        </div>
-                        
-                        <p>Il s&apos;agit d&apos;un rendez-vous, à mi parcours du défi, pour échanger autour d&apos;un verre, trouver une équipe, partager des idées et avancer ensemble ! </p>
-                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
-                            <svg width="48" height="49" >
-                                    <use href="icons.svg#date" />
-                                </svg>
-                                <div>
-                                    <span class="text-xs">Date</span>
-                                    <p class="m-0">A venir</p>
-                                </div>
-                            </div>
-                            <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
-                                <svg width="48" height="48" >
-                                    <use href="icons.svg#lieu" />
-                                </svg>        
-                                <div>
-                                    <span class="text-xs">Lieu </span>
-                                    <p class="m-0">A venir</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="d-none d-md-block m-auto p-0">
-                        <img class="img-fluid" src="assets/img/marche.png" alt="marche des producteurs" />
-                    </div>
+                            Rejoindre sur Instagram
+                        </button>
+                        <button class="btnn btn-neutral icon-side w-100">
+                            <svg  width="17" height="17" fill="#E5E5E5">
+                                <use href="icons.svg#facebook" />
+                            </svg>
+                            Rejoindre sur Facebook
+                        </button>
+                    </div>                               
                 </div>
-                <div class="d-flex flex-column flex-md-row my-4 gap-4 " >
-                    <div id="soireeLeft" class="bg-dark rounded p-4 col-12 col-md-6 ">
+                <div class="d-flex flex-column gap-5 col-12 col-md-6">
+                    <div class="bg-dark rounded p-5 me-4">
+                        <div class="d-flex gap-2 pb-3 gap-2 align-items-center col-md-6">
+                            <svg width="32" height="32" class="icon" viewBox="0 0 20 15" fill="white">
+                                <use href="icons.svg#discord" />
+                            </svg>
+                            <p class="text-SBlod m-0">Discord</p>
+                        </div>
+                        <p>Un espace en ligne pour échanger, collaborer et suivre les défis.</p>
+                        <a class="btnn icon-side" href="https://discord.gg/Fr4WCsQ7U5" target="_blank" >
+                            <svg width="20" height="15" class="icon" viewBox="0 0 20 15" fill="white">
+                                <use href="icons.svg#discord" />
+                            </svg>
+                            Rejoindre sur Discord
+                        </a>       
+                    </div>
+                    <div class="bg-dark rounded p-5 me-4">
                         <div class="d-flex gap-2 align-items-center pb-3">
-                            <svg class="d-none d-md-block" width="32" height="33" fill="white">
-                                <use href="icons.svg#tchin" />
+                            <svg width="32" height="33" fill="white">
+                                <use href="icons.svg#enveloppe" />
                             </svg>
-                            <p class="text-SBlod m-0">Une soirée chaque mardi</p>
+                            <p class="text-SBlod m-0">Newsletter</p>
                         </div>
-                        <p>Chaque mardi soir, un rendez-vous a lieu dans un bar grenoblois pour échanger. L&apos;heure et le lieu sont annoncés en story sur Instagram et Facebook. </p>
-                        <div class="text-center "> 
-                            <img class="img-fluid" src="assets/img/marche.png" alt="photo soiree" />   
-                        </div> 
-                        <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-around col-12 py-3 mt-2">
-                            <button class="btnn btn-neutral icon-side w-100">
-                                <svg  width="17" height="17" fill="white">
-                                    <use href="icons.svg#instagram" />
-                                </svg>
-                                Rejoindre sur Instagram
+                        <p>Ne manquez rien des nouveautés du KinoGrenoble en vous inscrivant à la newsletter</p>
+                        <div class="d-flex align-item-center gap-3">
+                            <input type="text" class="form-control" placeholder="Entrez votre email" aria-label="Email">
+                            <button class="btnn">
+                                <span class="d-none d-md-block">S&apos;abonner</span>
+                                <span class="d-block d-md-none">
+                                    <svg width="22" height="22" fill="white">
+                                        <use href="icons.svg#arrowUpRight" />
+                                    </svg>
+                                </span>
                             </button>
-                            <button class="btnn btn-neutral icon-side w-100">
-                                <svg  width="17" height="17" fill="#E5E5E5">
-                                    <use href="icons.svg#facebook" />
-                                </svg>
-                                Rejoindre sur Facebook
-                            </button>
-                        </div>                               
-                    </div>
-                    <div class="d-flex flex-column gap-5 col-12 col-md-6">
-                        <div class="bg-dark rounded p-5 me-4">
-                            <div class="d-flex gap-2 pb-3 gap-2 align-items-center col-md-6">
-                                <svg width="32" height="32" class="icon" viewBox="0 0 20 15" fill="white">
-                                    <use href="icons.svg#discord" />
-                                </svg>
-                                <p class="text-SBlod m-0">Discord</p>
-                            </div>
-                            <p>Un espace en ligne pour échanger, collaborer et suivre les défis.</p>
-                            <a class="btnn icon-side" href="https://discord.gg/Fr4WCsQ7U5" target="_blank" >
-                                <svg width="20" height="15" class="icon" viewBox="0 0 20 15" fill="white">
-                                    <use href="icons.svg#discord" />
-                                </svg>
-                                Rejoindre sur Discord
-                            </a>       
-
                         </div>
-                        <div class="bg-dark rounded p-5 me-4">
-                            <div class="d-flex gap-2 align-items-center pb-3">
-                                <svg width="32" height="33" fill="white">
-                                    <use href="icons.svg#enveloppe" />
-                                </svg>
-                                <p class="text-SBlod m-0">Newsletter</p>
-                            </div>
-                            <p>Ne manquez rien des nouveautés du KinoGrenoble en vous inscrivant à la newsletter</p>
-                            <div class="d-flex align-item-center gap-3">
-                                <input type="text" class="form-control" placeholder="Entrez votre email" aria-label="Email">
-                                <button class="btnn">
-                                    <span class="d-none d-md-block">S&apos;abonner</span>
-                                    <span class="d-block d-md-none">
-                                        <svg width="22" height="22" fill="white">
-                                            <use href="icons.svg#arrowUpRight" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>          
-                    </div>
+                    </div>          
                 </div>
-            </section>
-        </div>
-        <!-- films kino youtube -->
-            <section id="films" class="bg-dark">
-                <h2>Les films des Kinoites</h2>
-                <section id="cards-section" class="py-5">
-                <div class="container">
+            </div>
+        </section>
+    </div>
+        <!-- films kino youtube  -->
+        <section id="films" class="bg-dark py-4 px-2">
+            <h2>Les films des Kinoites</h2>
+            <div id="cards-section" class="py-5">
+            <div class="container">
                     <div class="d-none d-md-block">
                         <div class="row g-4">
                             <div class="col-md-4">
+                                <!-- 1ere card -->
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
                                         Défi titre imposé
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
                                         <p >Oct/Nov 2024</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
+                                <!-- 2eme card -->
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
-                                        Défi titre imposé
+                                        Défi talent caché
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
                                         <p >Mai/Juin 2024</p>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 3eme card -->
                             <div class="col-md-4">
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
-                                        Défi titre imposé
+                                        Défi S.O.S
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
                                         <p >Avril 2024</p>
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- 4eme card -->
                             <div class="col-md-4">
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
-                                        Défi titre imposé
+                                        Défi Echos
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
                                         <p >Avril 2024</p>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 5eme card -->
                             <div class="col-md-4">
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
-                                        Défi titre imposé
+                                        Défi S.O.S
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
                                         <p >Avril 2024</p>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 6eme card -->
                             <div class="col-md-4">
                                 <div class="card bg-transparent rounded position-relative">
                                     <div class="bg-secondary text-xs position-absolute tagFilm ">
                                         Défi titre imposé
                                     </div>
-                                    <img src="assets/img/defiTitre.png" class="card-img-top" alt="Carte 1">
+                                    <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
                                     <div class="card-body">
-                                        <p >Avril 2024</p>
+                                        <p >Oct/Nov 2024</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+            <!-- carousel for phone size -->
                     <div class="d-md-none">
                         <div id="cardsCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -421,63 +426,75 @@
                                 <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
                             </div>
                             <div class="carousel-inner">
+                                <!-- 1ere card -->
                                 <div class="carousel-item active">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+1" class="card-img-top" alt="Carte 1">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi titre imposé
+                                        </div>
+                                        <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 1</h5>
-                                            <p class="card-text">Description courte de la carte 1. Lorem ipsum dolor sit amet.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Oct/Nov 2024</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 2eme card -->
                                 <div class="carousel-item">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+2" class="card-img-top" alt="Carte 2">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi talent caché
+                                        </div>
+                                        <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 2</h5>
-                                            <p class="card-text">Description courte de la carte 2. Consectetur adipiscing elit.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Mai/Juin 2024</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 3eme card -->
                                 <div class="carousel-item">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+3" class="card-img-top" alt="Carte 3">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi S.O.S
+                                        </div>
+                                        <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 3</h5>
-                                            <p class="card-text">Description courte de la carte 3. Sed do eiusmod tempor incididunt.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Avril 2024</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 4eme card -->
                                 <div class="carousel-item">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+4" class="card-img-top" alt="Carte 4">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi Echos
+                                        </div>
+                                        <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 4</h5>
-                                            <p class="card-text">Description courte de la carte 4. Ut labore et dolore magna aliqua.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Avril 2024</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 5eme card -->
                                 <div class="carousel-item">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+5" class="card-img-top" alt="Carte 5">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi S.O.S
+                                        </div>
+                                        <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 5</h5>
-                                            <p class="card-text">Description courte de la carte 5. Enim ad minim veniam.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Avril 2024</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 6eme card -->
                                 <div class="carousel-item">
-                                    <div class="card">
-                                        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Carte+6" class="card-img-top" alt="Carte 6">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi titre imposé
+                                        </div>
+                                        <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
                                         <div class="card-body">
-                                            <h5 class="card-title">Titre Carte 6</h5>
-                                            <p class="card-text">Description courte de la carte 6. Quis nostrud exercitation ullamco.</p>
-                                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                                            <p >Oct/Nov 2024</p>
                                         </div>
                                     </div>
                                 </div>
@@ -502,7 +519,7 @@
                         </svg>
                     </a>
                 </div>
-            </section>
+            </div>
 
         <!-- footer -->
         <section id="footer">

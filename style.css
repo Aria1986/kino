@@ -123,6 +123,9 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   #defisRight{
     flex: 0 0 424px; max-width: 424px;
   }
+    #films{
+  padding:114px 64px;
+}
 }
 
 #popCorn{
@@ -133,17 +136,9 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   #imgProjection{
     height:250px;
   }
-}
-/* @media (min-width: 768px) {
-  #imgProjection{
-    width:454px;
-  }
-} */
 
+}
 #soireeLeft{
   max-width: 754px;
   /* max-height: 596px; */
-}
-#films{
-  padding:114px 64px;
 }
