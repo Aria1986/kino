@@ -7,7 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
     <!-- lien fontaweome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- lien font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     <!-- lien style css -->
     <link rel="stylesheet" href="style.css">
     <title>Kino</title>
@@ -52,13 +55,13 @@
         <p class="mb-4">Rejoignez une communauté ouverte à tous, tournez vos films et découvrez-les en projection gratuite tous les 2 mois</p>
         <div class="d-flex flex-column flex-md-row gap-3 justify-content-center my-4 py-2">
             <a class="btnn icon-side" href="https://docs.google.com/forms/d/1nBGHbIvZ_M1HeD_-43czSf_RneI0wGAjpnC9VA3kVjc/edit" target="_blank" data-icon="5">
-                <svg width="17" height="16" class="icon" viewBox="0 0 17 16" fill="white">
+                <svg width="17" height="16"  viewBox="0 0 17 16" fill="white">
                     <use href="icons.svg#clap-cine" />
                 </svg>
                  Envoyer mon film
                  </a>
             <a class="btnn btn-neutral icon-side" href="https://discord.gg/Fr4WCsQ7U5" target="_blank" >
-                <svg width="20" height="15" class="icon" viewBox="0 0 20 15" fill="white">
+                <svg width="20" height="15"  viewBox="0 0 20 15" fill="white">
                     <use href="icons.svg#discord" />
                 </svg>
                 Rejoindre sur Discord
@@ -68,15 +71,25 @@
     <div class="text-center py-0 py-md-3 overflow-hidden">
         <img class=" object-fit-cover" src="assets/img/accueil.png" alt="animation photos film"/>
     </div>
-    <div class="text-uppercase d-flex flex-row align-items-center overflow-hidden my-4">
-        <h1 class="flex-shrink-0">Kino grenoble</h1>
-        <i class="fa-solid fa-star fa-lg p-2"></i>
-        <h1 class="flex-shrink-0">Kino grenoble</h1>
-        <i class="fa-solid fa-star fa-lg p-2"></i>
-        <h1 class="flex-shrink-0">Kino grenoble</h1>
-        <i class="fa-solid fa-star fa-lg p-2"></i>
-        <h1 class="flex-shrink-0">Kino grenoble</h1>
-        <i class="fa-solid fa-star fa-lg p-2"></i>
+    <div id="bandeau" class="text-uppercase d-flex flex-row align-items-center overflow-hidden my-4">
+        <span class="flex-shrink-0">Kino grenoble</span>
+        <div class="mx-1" style="height:42px; width:42px;">
+            <svg class="d-block d-md-none" width="16" height="16" fill="white">
+                <use href="icons.svg#star"/>
+            </svg>
+            <svg  class="d-md-block d-none" width="42" height="42" fill="white">
+                <use href="icons.svg#star" />
+            </svg>
+        </div>
+        <span class="flex-shrink-0">Kino grenoble</span>
+        <div class="mx-1" style="height:42px; width:42px;">
+            <svg class="d-block d-md-none" width="16" height="16" fill="white">
+                <use href="icons.svg#star"/>
+            </svg>
+            <svg  class="d-md-block d-none" width="42" height="42" fill="white">
+                <use href="icons.svg#star" />
+            </svg>
+        </div>
     </div>
 
     <!-- A Propos -->
@@ -520,7 +533,10 @@
                     </a>
                 </div>
             </div>
-
+        <section id="equipe">
+            <h2>Faites connaissances avec l’équipe KinoGrenoble</h2>
+            <p>Bienvenue dans les coulisses de l’équipe du Kino, où chaque membre contribue à faire vivre les défis de court-métrage à Grenoble . Tous partagent la même envie de rendre la création accessible à tous.</p>
+        </section>    
         <!-- footer -->
         <section id="footer">
             <footer class="row row-cols-5 py-5 my-5">

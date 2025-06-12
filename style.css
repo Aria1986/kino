@@ -29,6 +29,11 @@
   z-index:2;
 }
 
+#bandeau{
+  font-family: "Rubik",sans-serif;
+  font-size: 88.43px;
+  font-weight: 800;
+}
 /*------------- A propos */
 
 
@@ -123,9 +128,12 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   #defisRight{
     flex: 0 0 424px; max-width: 424px;
   }
-    #films{
-  padding:114px 64px;
-}
+  #films{
+    padding:114px 64px;
+  }
+  #equipe{
+    padding: 80px 64px;
+  }
 }
 
 #popCorn{
