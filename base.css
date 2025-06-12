@@ -39,3 +39,16 @@ a:hover{
   border-radius: 16px;
   padding:10px;
 }
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Carré */
+    background-color: var(--bs-neutral-600)!important;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active {
+    background-color: var(--bs-primary)!important;
+    opacity: 1;
+}
