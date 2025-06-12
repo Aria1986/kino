@@ -33,3 +33,9 @@ a:hover{
 .z-10{
   z-index:10;
 }
+.tagFilm{
+  left:16px;
+  top:16px;
+  border-radius: 16px;
+  padding:10px;
+}
