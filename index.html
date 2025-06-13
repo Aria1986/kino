@@ -346,11 +346,13 @@
             </div>
         </section>
     </div>
+
         <!-- films kino youtube  -->
         <section id="films" class="bg-dark py-5 px-3">
             <h2>Les films des Kinoites</h2>
             <div id="cards-section" class="py-5">
-            <div class="container">
+                <div class="container">
+                <!-- pour grand écrans -->
                     <div class="d-none d-md-block">
                         <div class="row g-4">
                             <div class="col-md-4">
@@ -430,14 +432,14 @@
                 </div>
             <!-- carousel for phone size -->
                     <div class="d-md-none">
-                        <div id="cardsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div id="cardsTeamCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
                             </div>
                             <div class="carousel-inner">
                                 <!-- 1ere card -->
@@ -513,11 +515,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#cardsCarousel" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Précédent</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#cardsCarousel" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Suivant</span>
                             </button>
@@ -534,19 +536,26 @@
                     </a>
                 </div>
             </div>
-        <section id="equipe">
+        </section>    
+
+
+        <!-- équipe -->
+        <section id="equipe" class="bg-neutral">
             <h2>Faites connaissances avec l&apos;équipe KinoGrenoble</h2>
             <p>Bienvenue dans les coulisses de l&apos;équipe du Kino, où chaque membre contribue à faire vivre les défis de court-métrage à Grenoble . Tous partagent la même envie de rendre la création accessible à tous.</p>
-            <div class="container">
-                    <div class="d-none d-md-block">
-                        <div class="row g-3">
-                            <div class="col-md-3">
+            <div class="container px-0">
+                <!-- pour grand écrans -->
+                    <div class="d-none d-md-block ">
+                        <div class="row g-4 my-3">
+                            <div class="col-md-3 ">
                                 <!-- 1ere card -->
-                                <div class="card bg-transparent rounded position-relative">
-                                    <div class="bg-secondary text-xs position-absolute tagEquipe ">
-                                        Président KinoGrenoble
+                                <div class="card bg-transparent rounded">
+                                    <div class="image-wrapper  position-relative">
+                                        <img src="assets/img/djoe.png" class="card-img-top " alt="Carte 1">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe ">
+                                            Président KinoGrenoble
+                                        </div>
                                     </div>
-                                    <img src="assets/img/djoe.png" class="card-img-top my-3" alt="Carte 1">
                                     <div class="card-body">
                                         <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
                                             <span  style="width:30px;">
@@ -556,7 +565,7 @@
                                             </span>
                                             jonathan helme
                                         </div>
-                                        <p class="text-light">Compositeur de musiques, chef d’orchestre du Kino.</p>
+                                        <p class="text-light">Compositeur de musiques, chef d&apos;orchestre du Kino.</p>
                                     </div>
                                 </div>
                             </div>
@@ -568,7 +577,15 @@
                                     </div>
                                     <img src="assets/img/audrey.png" class="card-img-top " alt="Carte 1">
                                     <div class="card-body">
-                                        <p >Mai/Juin 2024</p>
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                            audrey maldonado
+                                        </div>
+                                        <p class="text-light">Comédienne, chanteuse, génie de l&apos;organisation.</p>
                                     </div>
                                 </div>
                             </div>
@@ -580,7 +597,15 @@
                                     </div>
                                     <img src="assets/img/simon.png" class="card-img-top " alt="Carte 1">
                                     <div class="card-body">
-                                        <p >Avril 2024</p>
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                            simon chastagnol
+                                        </div>
+                                        <p class="text-light">Comédien, débordant d&apos;énergies et d&apos;idées.</p>
                                     </div>
                                 </div>
                             </div>
@@ -592,19 +617,137 @@
                                     </div>
                                     <img src="assets/img/max.png" class="card-img-top " alt="Carte 1">
                                     <div class="card-body">
-                                        <p >Avril 2024</p>
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                             maxime favel
+                                        </div>
+                                        <p class="text-light">Vidéaste & électro, passionné de cinéma et de technique</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
         
-        
+
+             <!-- carousel for phone size -->
+                <div class="d-md-none">
+                    <div id="cardsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators pt-2">
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner my-3">
+                            <!-- 1ere card -->
+                            <div class="carousel-item active my-2" style="width:292px;">
+                                <div class="card bg-transparent rounded position-relative ">
+                                    <div class="image-wrapper  position-relative">
+                                        <img src="assets/img/djoe.png" class="card-img-top team" alt="Carte 1">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe ">
+                                            Président KinoGrenoble
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                            jonathan helme
+                                        </div>
+                                        <p class="text-light">Compositeur de musiques, chef d&apos;orchestre du Kino.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2eme card -->
+                            <div class="carousel-item my-2" style="width:292px;">
+                                <div class="card bg-transparent rounded position-relative">
+                                    <div class="bg-secondary text-xs position-absolute tagEquipe ">
+                                        Communication
+                                    </div>
+                                    <img src="assets/img/audrey.png" class="card-img-top team" alt="photo profil Audrey">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                            audrey maldonado
+                                        </div>
+                                        <p class="text-light">Comédienne, chanteuse, génie de l&apos;organisation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3eme card -->
+                            <div class="carousel-item my-2" style="width:292px;">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe ">
+                                            Trésorier
+                                        </div>
+                                        <img src="assets/img/simon.png" class="card-img-top team" alt="photo profil Simon">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                                <span  style="width:30px;">
+                                                <svg class="d-block d-md-none" width="24" height="24">
+                                                    <use href="icons.svg#star"/>
+                                                </svg>
+                                                </span>
+                                                simon chastagnol
+                                            </div>
+                                            <p class="text-light">Comédien, débordant d&apos;énergies et d&apos;idées.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4eme card -->
+                            <div class="carousel-item my-2 " style="width:292px;">
+                                <div class="card bg-transparent rounded position-relative" >
+                                    <div class="bg-secondary text-xs position-absolute tagEquipe ">
+                                        Technicien
+                                    </div>
+                                    <img src="assets/img/max.png" class="card-img-top team" alt="photo profil Max">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs uppercase text-primary my-2" >
+                                            <span  style="width:30px;">
+                                            <svg class="d-block d-md-none" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            </span>
+                                            maxime favel
+                                        </div>
+                                        <p class="text-light">Vidéaste & électro, passionné de cinéma et de technique</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cardsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cardsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </section>    
 
 
 
         <!-- footer -->
-        <section id="footer">
-            <footer class="row row-cols-5 py-5 my-5">
+        <section id="footer" class="position-relative">
+            <div id="ellipseFooter"></div>
+            <footer class="row row-md-cols-5 col-12 py-5 my-5 px-3">
                 <div class="col">
                     <div class="bricolage-grotesque text-uppercase">
                         <img src="assets/img/logo.png" alt="logo Kino" >
@@ -646,8 +789,17 @@
                     <p>contact[arobase]kinogrenoble[point]com</p>
                     <h5>Suivez-nous sur</h5>
                     <div class="icon-container text-neutral-300">
-                        <svg width="20" height="15" class="icon" viewBox="0 0 20 15" fill="white">
+                        <svg width="24" height="24" class="icon" >
                             <use href="icons.svg#discord" />
+                        </svg>
+                        <svg  width="24" height="24" >
+                            <use href="icons.svg#instagram" />
+                        </svg>
+                        <svg width="24" height="24"  >
+                            <use href="icons.svg#discord" />
+                        </svg>
+                        <svg width="24" height="24" >
+                            <use href="icons.svg#youtube"/>
                         </svg>
                     </div>
                 </div>

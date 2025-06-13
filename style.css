@@ -158,9 +158,30 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 }
 .tagEquipe{
   left:16px;
-  top:260px;
+  bottom: 18px;
+  /* top:260px; */
   border-radius: 16px;
   padding:10px;
   width:260px;
   text-align: center;
+}
+.team{
+  width: 292px;
+  height: 320px;
+}
+#ellipseFooter{
+  position: absolute;
+  width: 821px;
+  height: 452.32px;
+  left: -297.26px;
+  top: 175.5px;
+
+  background: rgba(0, 187, 249, 0.2);
+  mix-blend-mode: lighten;
+  filter: blur(176.433px);
+  transform: rotate(-40.66deg);
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
 }
