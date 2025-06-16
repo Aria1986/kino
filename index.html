@@ -762,16 +762,14 @@
         <!-- footer -->
         <section id="footer" class="position-relative container pt-5">
             <div id="ellipseFooter"></div>
-            <footer class="row my-5 ">
-                <div class="col-md-4 mb-3">
-                    <div class="text-uppercase">
+            <footer class="d-flex flex-column flex-md-row my-5 align-item-center">
+                <div class="col-md-4 mb-3 my-md-auto text-uppercase">
                         <img src="assets/img/logo.png" alt="logo Kino" >
                         KINO grenoble
-                    </div>
                 </div>
                 <div class="col-md-8 mb-3">
                     <div class="d-flex flex-column">
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-4 mb-3">
                                 <h5>Kinogrenoble</h5>
                                 <ul class="nav flex-column">
@@ -798,26 +796,34 @@
                             </div>
                         </div>
 
-                        <div class="border-top pt-2">
-                            <div class="row justify-content-between">
-                                <h5 class="col-md-6">Contact</h5>
-                                <p class="col-md-6">contact[arobase]kinogrenoble[point]com</p>
+                        <div class="border-top border-neutral-400 pt-3 d-wrap">
+                            <div class="d-flex flex-md-row flex-column justify-content-between">
+                                <p >Contact</p>
+                                <p >contact[arobase]kinogrenoble[point]com</p>
                             </div>
-                            <div class="row justify-content-between">
-                                <h5 class="col-md-6">Suivez-nous sur</h5>
-                                <div class=" col-md-6 icon-container text-neutral-300">
-                                    <svg width="24" height="24" class="icon" >
-                                        <use href="icons.svg#discord" />
+                            <div class="d-flex flex-md-row flex-column justify-content-between">
+                                <p >Suivez-nous sur</p>
+                                <div class=" d-flex justify-content-end p-0">
+                                    <a href="https://www.facebook.com/KinoGrenoble/" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3" width="24" height="24" >
+                                        <use href="icons.svg#facebook" />
                                     </svg>
-                                    <svg  width="24" height="24" >
+                                    </a>
+                                    <a href="https://www.instagram.com/kino.grenoble" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3"  width="24" height="24" >
                                         <use href="icons.svg#instagram" />
                                     </svg>
-                                    <svg width="24" height="24"  >
+                                    </a>
+                                    <a href="https://discord.gg/Fr4WCsQ7U5" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3" width="24" height="24"  >
                                         <use href="icons.svg#discord" />
                                     </svg>
-                                    <svg width="24" height="24" >
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCsAI-rzMsGGmUna8RErlJC" class="text-neutral-300" target="_blank">
+                                    <svg  width="24" height="24" >
                                         <use href="icons.svg#youtube"/>
                                     </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
