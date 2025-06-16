@@ -29,6 +29,41 @@
   z-index:2;
 }
 
+/* image animée */
+.img-container{
+    width: 100%; /* Le conteneur prend 100% de la largeur de son parent */
+    height: 300px; /* Ou une hauteur fixe pour l'image */
+    overflow: hidden; /* Très important : masque ce qui dépasse */
+    position: relative; 
+}
+
+#animated-image{
+    /* L'image doit être plus large que son conteneur pour pouvoir bouger */
+    width: 150%; /* Exemple : l'image est 1.5 fois plus large que le conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    object-fit: cover; /* Recadre l'image pour couvrir l'espace sans la déformer */
+    /* Positionnement pour l'animation */
+    position: absolute;
+    top: 0;
+   
+    animation: slideHorizontal 8s ease-in-out infinite alternate;
+    
+    /* Optimisations pour la fluidité */
+    will-change: transform; /* Prépare le navigateur pour l'animation */
+    backface-visibility: hidden; /* Évite les scintillements */
+}
+/* Définition des étapes de l'animation */
+@keyframes slideHorizontal {
+     0% {
+        transform: translateX(0); /* Position de départ */
+    }
+    100% {
+        transform: translateX(-33.33%); /* Déplace de 33.33% vers la gauche */
+        /* Calcul : si l'image fait 150% et le conteneur 100%, 
+           pour voir la partie droite, on doit déplacer de (150-100)/150 = 33.33% */
+    }
+  }
+
 #bandeau{
   font-family: "Rubik",sans-serif;
   font-size: 88.43px;
