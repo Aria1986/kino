@@ -32,7 +32,7 @@
 /* image animée */
 .img-container{
     width: 100%; /* Le conteneur prend 100% de la largeur de son parent */
-    height: 300px; /* Ou une hauteur fixe pour l'image */
+    height: 601px; /* Ou une hauteur fixe pour l'image */
     overflow: hidden; /* Très important : masque ce qui dépasse */
     position: relative; 
 }
@@ -45,7 +45,7 @@
     /* Positionnement pour l'animation */
     position: absolute;
     top: 0;
-   
+    left:40px;
     animation: slideHorizontal 8s ease-in-out infinite alternate;
     
     /* Optimisations pour la fluidité */
@@ -55,7 +55,7 @@
 /* Définition des étapes de l'animation */
 @keyframes slideHorizontal {
      0% {
-        transform: translateX(0); /* Position de départ */
+        transform: translateX(30); /* Position de départ */
     }
     100% {
         transform: translateX(-33.33%); /* Déplace de 33.33% vers la gauche */
