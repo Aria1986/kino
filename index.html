@@ -139,14 +139,14 @@
             </div>
             <div class="bg-dark rounded m-auto p-4 position-relative " >
                 <p class="text-SBlod text-center p-3"> Défi en cours</p>
-                <span id="clapInfos" class="d-none d-md-block  position-absolute top-0 start-0 " style="z-index:-1;">
+                <span id="clapInfos" class="d-none d-md-block  position-absolute top-0 start-0 " style="z-index:1;">
                     <svg width="172" height="175" viewBox="0 0 172 175">
                         <use href="icons.svg#gros-clap-etoile"/>
                     </svg>
                 </span>
                 <div  class="p-4 d-flex flex-column flex-md-row gap-3 justify-content-center">
                     <div id="defisLeft" class="d-flex flex-column gap-3 w-100 my-auto" >
-                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center position-relative z-10">
                             <svg  width="48" height="48" >
                                 <use href="icons.svg#document"/>
                             </svg>     
@@ -155,7 +155,7 @@
                                 <p class="m-0"><span class="text-primary">Mal et Fils </span>(ou Maléfice ou Malé fils comme vous le voulez ! )</p>
                             </div>
                         </div>
-                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center" >
                             <svg width="48" height="48" viewBox="0 0 48 48">
                                 <use href="icons.svg#question"/>
                             </svg>   
@@ -191,7 +191,7 @@
                                     <use href="icons.svg#musique"/>
                             </svg>
                             <div>
-                                <span class="text-xs">Respect des droits d’auteurs !</span>
+                                <span class="text-xs">Respect des droits d&apos;auteurs !</span>
                                 <p class="m-0">Pour les contenus utilisés (musiques, bruitages, images)</p>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
         
         <!-- soiree projection -->
         <div class="bg-dark rounded mx-auto my-4 p-4 position-relative d-flex flex-column flex-md-row gap-3 " >
-            <span id="popCorn" class="position-absolute end-0 top-0 d-none d-lg-block">
+            <span id="popCorn" class="position-absolute end-0 top-0 d-none d-lg-block z-1">
                 <svg width="198" height="210" >
                     <use href="icons.svg#popcorn" />
                 </svg>
@@ -215,9 +215,9 @@
             <!-- hide text on big screen because he has a different position -->
             <p class="d-block d-md-none text-SBlod text-center  p-3"> Prochaine soirée de projection</p>
             <img class="mx-md-3 my-auto rounded img-fluid" src="assets/img/projection.png" alt="soiree projection" />
-            <div  class="p-4 w-100">
+            <div  class="p-4 w-100 ">
                 <p class="d-none d-md-block text-SBlod text-start p-3"> Prochaine soirée de projection</p>
-                <div class="d-flex flex-column gap-3 w-full my-auto" >
+                <div class="d-flex flex-column gap-3 w-full my-auto position-relative z-5" >
                     <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
                         <svg width="48" height="49" >
                             <use href="icons.svg#date" />
