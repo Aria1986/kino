@@ -202,7 +202,7 @@ border-radius: 16px;
   position:absolute;
   right:0px; 
   top:16px;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.8s ease-out;
     /* Optionnel: Point d'origine de la transformation si vous utilisez des rotations ou échelles */
   transform-origin: center center;
 }
