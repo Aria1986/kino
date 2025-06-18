@@ -257,3 +257,6 @@ border-radius: 16px;
   flex-grow: 0;
   z-index: 2;
 }
+#footer{
+  overflow-y: hidden;
+}
