@@ -161,7 +161,6 @@ border-radius: 16px;
 /* ---------Infos essentielles */
 
 #clapInfos{
-  
   position:absolute;
   top:25.7px;
   left:10.72px;
@@ -257,6 +256,41 @@ border-radius: 16px;
   flex-grow: 0;
   z-index: 2;
 }
+/* equipe */
+
+/* jonathan */
+.jonathanCitation {
+  position:absolute;
+  width:260px;
+  height:60px;
+  bottom:117px;
+  right: 16px;
+  z-index: 7;
+  display: none; 
+
+}
+
+/* .jonathan:hover img.team {
+    filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.1))!important;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  } */
+.jonathan:hover img {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.jonathan:hover .jonathanTag {
+    display: none;
+}
+
+.image-wrapper.jonathan:hover .jonathanCitation {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color:white;
+}
+
+
 #footer{
   overflow-y: hidden;
 }
