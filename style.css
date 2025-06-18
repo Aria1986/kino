@@ -80,10 +80,12 @@
   right:33px;
   bottom: 296px;
   background: #E8F1FE;
+  border-radius: 16px;
   /* Colors/neutral/0 */
   border: 2.42818px solid #FFFFFF;
   transform: matrix(-0.07, 1, 1, 0.07, 0, 0);
 }
+
 #line2{
 position: absolute;
 width: 15.87px;
@@ -94,6 +96,7 @@ background: #E8F1FE;
 /* Colors/neutral/0 */
 border: 2.42818px solid #FFFFFF;
 transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
+border-radius: 16px;
 }
 #starWithLines{
   position:absolute;
@@ -148,8 +151,20 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 
 /* ---------Infos essentielles */
 
-#clapInfosScrolle{
+#clapInfos{
   
+  position:absolute;
+  top:25.7px;
+  left:10.72px;
+  z-index:1;
+    transition: transform 0.3s ease-out;
+    /* Optionnel: Point d'origine de la transformation si vous utilisez des rotations ou échelles */
+  transform-origin: center center;
+}
+#cadreGrosClap:hover{
+  #clapInfos{
+    transform: translate(4px, -4px)rotate(-5deg);
+  }
 }
 @media (min-width: 768px) {
   #btnEnvoiFilm2{
@@ -179,12 +194,13 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
   right:0px; 
   top:16px;
   transition: transform 0.3s ease-out;
-
     /* Optionnel: Point d'origine de la transformation si vous utilisez des rotations ou échelles */
-    transform-origin: center center;
+  transform-origin: center center;
 }
-#popCorn:hover{
+#cadrePopcorn:hover{
+  #popCorn{
   transform: translate(8px, -8px)rotate(5deg);
+  }
 }
 
 @media (max-width: 768px) {
