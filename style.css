@@ -172,13 +172,16 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 }
 
 #popCorn{
+  position:absolute;
+  right:0px; 
+  top:16px;
   transition: transform 0.3s ease-out;
 
     /* Optionnel: Point d'origine de la transformation si vous utilisez des rotations ou échelles */
     transform-origin: center center;
 }
 #popCorn:hover{
-  transform: translate(10px, -10px)rotate(15deg);
+  transform: translate(8px, -8px)rotate(5deg);
 }
 
 @media (max-width: 768px) {
