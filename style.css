@@ -28,7 +28,16 @@
 .nav-item{
   z-index:2;
 }
-
+@media (max-width: 768px) {
+  #introduction{
+    margin-top: 44px;
+  }}
+@media (min-width: 768px) {
+  #introduction{
+    margin-bottom: 64px;
+    margin-top: 162px;
+  }
+}
 /* image animée */
 .img-container{
     width: 100%; /* Le conteneur prend 100% de la largeur de son parent */
