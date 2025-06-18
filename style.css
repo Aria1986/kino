@@ -148,6 +148,9 @@ transform: matrix(-0.76, 0.65, 0.64, 0.77, 0, 0);
 
 /* ---------Infos essentielles */
 
+#clapInfosScrolle{
+  
+}
 @media (min-width: 768px) {
   #btnEnvoiFilm2{
       position:absolute;
