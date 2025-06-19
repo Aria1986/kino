@@ -25,8 +25,13 @@
 }
 
 /* paramètres navbar */
-.nav-item{
+/* .nav-item{
   z-index:2;
+} */
+.navbar{
+  position:sticky!important;
+  top:0;
+  z-index:50;
 }
 @media (max-width: 768px) {
   #introduction{
@@ -36,6 +41,9 @@
   #introduction{
     margin-bottom: 64px;
     margin-top: 162px;
+  }
+  nav{
+    padding: 8px 64px;
   }
 }
 /* image animée */
