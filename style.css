@@ -219,7 +219,6 @@ border-radius: 16px;
 }
 #soireeLeft{
   max-width: 754px;
-  /* max-height: 596px; */
 }
 .tagFilm{
   left:16px;
@@ -230,7 +229,6 @@ border-radius: 16px;
 .tagEquipe{
   left:16px;
   bottom: 18px;
-  /* top:260px; */
   border-radius: 16px;
   padding:10px;
   width:260px;
@@ -256,8 +254,12 @@ border-radius: 16px;
   flex-grow: 0;
   z-index: 2;
 }
+
 /* equipe */
 
+.audrey img{
+mix-blend-mode: luminosity;
+}
 
 .jonathanCitation,
 .audreyCitation,
@@ -277,7 +279,7 @@ border-radius: 16px;
 .audrey:hover img,
 .simon:hover img,
 .max:hover img {
-    filter: blur(5px);
+    filter: blur(7px);
     transition: filter 0.3s ease;
 }
 
@@ -289,16 +291,14 @@ border-radius: 16px;
 }
 
 .image-wrapper.jonathan:hover .jonathanCitation,
-.image-wrapper .audrey:hover .audreyCitation,
-.image-wrapper .simon:hover .simonCitation,
-.image-wrapper .max:hover .maxCitation {
+.image-wrapper.audrey:hover .audreyCitation,
+.image-wrapper.simon:hover .simonCitation,
+.image-wrapper.max:hover .maxCitation {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
     color:white;
 }
-
-/* audrey */
 
 
 #footer{
