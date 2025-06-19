@@ -258,37 +258,47 @@ border-radius: 16px;
 }
 /* equipe */
 
-/* jonathan */
-.jonathanCitation {
+
+.jonathanCitation,
+.audreyCitation,
+.simonCitation,
+.maxCitation {
   position:absolute;
   width:260px;
   height:60px;
   bottom:117px;
-  right: 16px;
-  z-index: 7;
+  left: 16px;
+  z-index: 10;
   display: none; 
 
 }
 
-/* .jonathan:hover img.team {
-    filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.1))!important;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-  } */
-.jonathan:hover img {
+.jonathan:hover img, 
+.audrey:hover img,
+.simon:hover img,
+.max:hover img {
     filter: blur(5px);
     transition: filter 0.3s ease;
 }
 
-.jonathan:hover .jonathanTag {
+.jonathan:hover .jonathanTag,
+.audrey:hover .audreyTag,
+.simon:hover .simonTag,
+.max:hover .maxTag {
     display: none;
 }
 
-.image-wrapper.jonathan:hover .jonathanCitation {
+.image-wrapper.jonathan:hover .jonathanCitation,
+.image-wrapper .audrey:hover .audreyCitation,
+.image-wrapper .simon:hover .simonCitation,
+.image-wrapper .max:hover .maxCitation {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
     color:white;
 }
+
+/* audrey */
 
 
 #footer{
