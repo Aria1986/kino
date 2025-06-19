@@ -268,7 +268,7 @@ mix-blend-mode: luminosity;
   position:absolute;
   width:260px;
   height:60px;
-  bottom:117px;
+  top:40%;
   left: 16px;
   z-index: 10;
   display: none; 
