@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lien css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
-    <!-- lien fontaweome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- lien font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     <!-- lien style css -->
     <link rel="stylesheet" href="style.css">
     <title>Kino</title>
@@ -20,7 +18,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent ">
-        <div id="menu" class="container-fluid">
+        <div id="menu" class="container-fluid rounded">
             <a class="navbar-brand order-1" href="#">
                 <div class="bricolage-grotesque text-uppercase">
                     <img src="assets/img/logo.png" alt="logo Kino" >
@@ -102,15 +100,16 @@
     </div>
 
     <!-- A Propos -->
-    <div id="aPropos" class="container-fluid py-4 px-2 m-md-3">
-        <div class="m-4 p-md-4 d-flex flex-column flex-md-row gap-3">
-            <div class="py-3 m-lg-4 w-100 w-md-50">
+    <div id="aPropos" class="container-fluid py-4 ">
+        <section  class="container my-4 d-flex flex-column flex-md-row gap-3" style="flex: 0 0 1312px; max-width: 1312px;" >
+        <!-- <div class=" "> -->
+            <div class="py-3 w-100 w-md-50">
                 <h2 class="text-primary ">Notre devise</h2>
                 <h2>"Faire bien avec rien, faire mieux avec peu, mais le faire maintenant"</h2>
                 <p>Le Kino Grenoble est une association qui relève des défis cinématographiques depuis mars 2020, en temps limité, souvent sans budget, mais avec beaucoup de créativité.</p>
                 <p>Né à Montréal, le Kino s&apos;est exporté dans le monde entier. Son objectif est d&apos;encourager la création collaborative, que l&apos;on soit débutant ou expérimenté.</p>
             </div>
-            <div id="aProposRight" class="position-relative w-100 w-md-50 mx-lg-4">
+            <div id="aProposRight" class="position-relative w-100 w-md-50 ">
                 <div class="d-none d-md-block">
                     <span id="line1"></span>
                     <span id="line2"></span>
@@ -136,7 +135,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
+        </section>
     </div>
 
     <!-- Infos essentielles -->
@@ -853,5 +853,6 @@
     </div>
     <!-- lien package(popper+bootstrap) js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

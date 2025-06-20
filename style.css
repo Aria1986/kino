@@ -33,11 +33,17 @@
   top:0;
   z-index:50;
 }
+
 @media (max-width: 768px) {
   #introduction{
     margin-top: 44px;
-  }}
+  }
+}
 @media (min-width: 768px) {
+  #menu{
+  flex: 0 0 1312px; 
+  max-width: 1312px;
+}
   #introduction{
     margin-bottom: 64px;
     margin-top: 162px;
