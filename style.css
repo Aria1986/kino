@@ -94,7 +94,39 @@
 }
 /*------------- A propos */
 
+@media (max-width: 768px) {
+  #aPropos,
+  #films, 
+  #equipe,
+  #footer{
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  #defi{
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+  #rdzvous{
+    margin-bottom: 32px;
+  }
+}
 
+@media (min-width: 768px) {
+  #aPropos,
+  #equipe{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #defi,
+  #films,
+  #footer{
+     margin-top: 112px;
+     margin-bottom: 112px;
+  }
+   #rdzvous{
+    margin-bottom: 112px;
+  }
+}
 /* icones decoration pour grands ecrans */
 #line1{
   position: absolute;
