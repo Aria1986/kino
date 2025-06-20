@@ -92,8 +92,8 @@
   font-size: 88.43px;
   font-weight: 800;
 }
-/*------------- A propos */
 
+/* margin sections */
 @media (max-width: 768px) {
   #aPropos,
   #films, 
@@ -126,6 +126,30 @@
    #rdzvous{
     margin-bottom: 112px;
   }
+}
+
+/*------------- A propos */
+
+#surlign{
+  position: absolute;
+  height: 6.99px;
+   top: 100%; /* Ajuste la position verticale pour le surlignage */
+    left: 0;
+    width: 100%;
+transform: translateY(-50%);
+  transform: rotate(-1.78deg);
+
+/* Inside auto layout */
+/* flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2; */
+
+}
+#surlign svg {
+    width: 100%;  /* Le SVG prend 100% de la largeur de sa div parente (#surlign) */
+    height: 100%; /* Le SVG prend 100% de la hauteur de sa div parente (#surlign) */
+    display: block; /* Supprime les petits espaces blancs en bas de l'SVG */
 }
 /* icones decoration pour grands ecrans */
 #line1{
@@ -171,7 +195,6 @@ border-radius: 16px;
 #carteDefis{
   max-width: 417px;
   max-height:283px;
-
   backdrop-filter: blur(9.1px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 30px;
@@ -261,8 +284,8 @@ border-radius: 16px;
   #imgProjection{
     height:250px;
   }
-
 }
+
 #soireeLeft{
   max-width: 754px;
   max-height:596px;
