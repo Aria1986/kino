@@ -1,4 +1,15 @@
 /* paramètres du texte */
+
+::selection {
+  background-color: #ffffff; /* Remplacez par la couleur de votre choix */
+  color: var(--bs-dark);
+}
+
+/* Pour Firefox, car il utilise un préfixe différent */
+::-moz-selection {
+  background-color: #ffffff; /* Remplacez par la couleur de votre choix */
+  color: var(--bs-dark);
+}
 h1,h2,h3,h4{
   font-family: "Bricolage Grotesque", sans-serif;
 }
