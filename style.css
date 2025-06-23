@@ -299,6 +299,8 @@ border-radius: 16px;
   border-radius: 16px;
   padding:10px;
 }
+
+/* equipe */
 .tagEquipe{
   left:16px;
   bottom: 18px;
@@ -311,24 +313,11 @@ border-radius: 16px;
   width: 292px;
   height: 320px;
 }
-#ellipseFooter{
-  position: absolute;
-  width: 821px;
-  height: 452.32px;
-  left: -297.26px;
-  top: 175.5px;
-  background: rgba(0, 187, 249, 0.2);
-  mix-blend-mode: lighten;
-  filter: blur(176.433px);
-  transform: rotate(-40.66deg);
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  z-index: 2;
+
+#equipe .carousel-item{
+  margin: 0 auto;
+  float:none!important;
 }
-
-/* equipe */
-
 .audrey img{
 mix-blend-mode: luminosity;
 }
@@ -373,6 +362,22 @@ mix-blend-mode: luminosity;
 }
 
 
+/* footer */
+#ellipseFooter{
+  position: absolute;
+  width: 821px;
+  height: 452.32px;
+  left: -297.26px;
+  top: 175.5px;
+  background: rgba(0, 187, 249, 0.2);
+  mix-blend-mode: lighten;
+  filter: blur(176.433px);
+  transform: rotate(-40.66deg);
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+}
 #footer{
   overflow-y: hidden;
 }
