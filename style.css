@@ -95,10 +95,8 @@
 
 /* margin sections */
 @media (max-width: 768px) {
-  #aPropos,
-  #films, 
-  #equipe,
-  #footer{
+  #aPropos, 
+  #equipe{
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -109,22 +107,27 @@
   #rdzvous{
     margin-bottom: 32px;
   }
+    #footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media (min-width: 768px) {
-  #aPropos,
-  #equipe{
+  #aPropos{
     margin-top: 80px;
     margin-bottom: 80px;
   }
-  #defi,
-  #films,
-  #footer{
+  #defi{
      margin-top: 112px;
      margin-bottom: 112px;
   }
    #rdzvous{
     margin-bottom: 112px;
+  }
+  #footer{
+     padding-top: 112px;
+     padding-bottom: 112px;
   }
 }
 
@@ -314,7 +317,6 @@ border-radius: 16px;
   height: 452.32px;
   left: -297.26px;
   top: 175.5px;
-
   background: rgba(0, 187, 249, 0.2);
   mix-blend-mode: lighten;
   filter: blur(176.433px);
