@@ -9,6 +9,9 @@
 .text-secondary { color: var(--bs-secondary) !important; }
 .text-neutral-300 { color: var(--bs-neutral-300) !important; }
 .border-neutral-400{border-color: var(--bs-neutral-400) !important;}
+.border-neutral{border-color: var(--bs-neutral) !important;}
+
+
 body{
     background-color: #06080F ;  
     color: #fff;
@@ -41,7 +44,9 @@ a:hover{
 .z-10{
   z-index:10;
 }
-
+.card{
+  border:0;
+}
 .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;

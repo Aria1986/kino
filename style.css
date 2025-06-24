@@ -24,19 +24,23 @@
     z-index: 2;
 }
 
-/* paramètres navbar */
-/* .nav-item{
-  z-index:2;
-} */
+#logoText{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .navbar{
   position:sticky!important;
   top:0;
   z-index:50;
-}
+} 
 
 @media (max-width: 768px) {
   #introduction{
     margin-top: 44px;
+  }
+   nav{
+    padding: 4px 16px;
   }
 }
 @media (min-width: 768px) {
@@ -67,7 +71,7 @@
     object-fit: cover; /* Recadre l'image pour couvrir l'espace sans la déformer */
     /* Positionnement pour l'animation */
     position: absolute;
-      top: 0;
+    top: 0;
     left: 0;
     animation: slideHorizontal 30s ease-in-out infinite alternate;
     
@@ -136,10 +140,10 @@
 #surlign{
   position: absolute;
   height: 6.99px;
-   top: 100%; /* Ajuste la position verticale pour le surlignage */
-    left: 0;
-    width: 100%;
-transform: translateY(-50%);
+  top: 100%; /* Ajuste la position verticale pour le surlignage */
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
   transform: rotate(-1.78deg);
 
 /* Inside auto layout */
