@@ -55,6 +55,9 @@
   nav{
     padding: 8px 64px;
   }
+  .nav-item{
+    padding-right: 56px;
+  }
 }
 /* image animée */
 .img-container{
