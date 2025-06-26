@@ -103,21 +103,21 @@
 
 /* margin sections */
 @media (max-width: 768px) {
-    .conteneurPhone{
-      padding-left: 16px!important;
-      padding-right: 16px!important;
-    }
-    footer{
-      padding-left: 16px!important;
-    }
-   #bandeau{
+  .conteneurPhone{
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+  }
+  footer{
+    padding-left: 16px!important;
+  }
+  #bandeau{
     margin-top: 40px;
     margin-bottom: 32px;
-    }
+  }
   #aPropos, 
   #equipe{
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   #defi{
     margin-top: 32px;
@@ -126,7 +126,8 @@
   #rdzvous{
     margin-bottom: 32px;
   }
-    #footer{
+
+  #films,#footer{
     padding-top: 32px;
     padding-bottom: 32px;
   }
