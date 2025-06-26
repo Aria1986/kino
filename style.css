@@ -102,6 +102,13 @@
 
 /* margin sections */
 @media (max-width: 768px) {
+    .conteneurPhone{
+      padding-left: 16px!important;
+      padding-right: 16px!important;
+    }
+    footer{
+      padding-left: 16px!important;
+    }
   #aPropos, 
   #equipe{
     margin-top: 32px;
