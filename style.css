@@ -210,22 +210,26 @@ border-radius: 16px;
 /* cartes */
 
 #carteDefis{
-  max-width: 417px;
-  max-height:283px;
+  
   backdrop-filter: blur(9.1px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 30px;
 }
 
 #carteFilms{
-  max-width: 384px;
-  max-height:283px;
+  
   border-radius: 30px;
 }
-
+@media (max-width: 768px) {
+  #carteDefis,
+  #carteFilms {
+      flex: 1; /* Les cartes prennent tout l'espace disponible */
+      min-width: 360px; /* Hauteur minimale pour éviter qu'elles soient trop petites */
+  }
+}
 @media (min-width: 768px) {
-  #aProposRight{
-    min-height: 527px;
+ #aProposRight{
+    /* min-height: 527px; */
     max-width: 621px;
   }
   #carteDefis,#carteFilms{
@@ -235,15 +239,24 @@ border-radius: 16px;
     position:absolute;
     bottom:244px;
     left:0px;
+    max-width: 384px;
+    max-height:283px;
   }
   #carteDefis{
     position:absolute;
     bottom:0px;
     left:177px;
     z-index:1;
+    max-width: 417px;
+    max-height:283px;
   }
 }
-
+/* @media (min-width: 992px) {
+   #aProposRight{
+    min-height: 527px;
+    max-width: 621px;
+  }
+} */
 /* ---------Infos essentielles */
 
 #clapInfos{
