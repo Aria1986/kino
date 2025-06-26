@@ -110,6 +110,10 @@
     footer{
       padding-left: 16px!important;
     }
+   #bandeau{
+    margin-top: 40px;
+    margin-bottom: 32px;
+    }
   #aPropos, 
   #equipe{
     margin-top: 32px;
@@ -347,7 +351,7 @@ border-radius: 16px;
 }
 
 #equipe .carousel-item{
-  margin: 0 auto;
+  margin: 0px auto;
   float:none!important;
 }
 .audrey img{
