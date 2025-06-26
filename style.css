@@ -94,11 +94,7 @@
     }
   }
 
-#bandeau{
-  font-family: "Rubik",sans-serif;
-  font-size: 88.43px;
-  font-weight: 800;
-}
+
 
 /* margin sections */
 @media (max-width: 768px) {

@@ -13,18 +13,49 @@
 h1,h2,h3,h4{
   font-family: "Bricolage Grotesque", sans-serif;
 }
-h1{
+#bandeau{
+  font-family: "Rubik",sans-serif;
+  font-weight: 600;
+  line-height: 112.99%;
+}
+@media (max-width:768px) {
+  h1{
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+}
+/*h2-> sur figma Larde Semi Bold */
+h2{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+#bandeau{
+  font-size: 33.60px;
+  font-weight: 600;
+}
+}
+@media (min-width:768px) {
+  h1{
   font-size: 46px;
   font-weight: 800;
+  line-height: 55px;
 }
+/*h2-> sur figma Larde Semi Bold */
 h2{
   font-size: 36px;
   font-weight: 600;
+  line-height: 43px;
+}
+#bandeau{
+  font-size: 88.43px;
+}
 }
 /* titles */
 .text-SBlod{
   font-size: 24px;
   font-weight: 700;
+  line-height: 29px;
   color:#fff;
 }
 .text-xs{
