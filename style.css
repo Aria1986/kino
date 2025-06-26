@@ -66,6 +66,11 @@
     overflow: hidden; /* Très important : masque ce qui dépasse */
     position: relative; 
 }
+@media (max-width: 768px) {
+  .img-container{
+    height: 346px;
+  }
+}
 
 #animated-image{
     /* L'image doit être plus large que son conteneur pour pouvoir bouger */
@@ -310,6 +315,9 @@ border-radius: 16px;
   #imgProjection{
     height:250px;
   }
+  #abonner{
+  width:48px;
+  } 
 }
 
 #soireeLeft{
@@ -322,6 +330,7 @@ border-radius: 16px;
   border-radius: 16px;
   padding:10px;
 }
+
 
 /* equipe */
 .tagEquipe{
