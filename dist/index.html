@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lien css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    <!-- lien font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <!-- lien style css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kino</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="fondDegrade"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent ">
+        <div id="menu" class="container-fluid rounded">
+            <a class="navbar-brand order-1" href="#">
+                <div >
+                    <img src="assets/img/logo.png" alt="logo Kino" >
+                    <span id="logoText" >KINO grenoble</span>
+                </div>
+            </a>
+            <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aPropos">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#defi">Défi en cours</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link" href="#films">Les films des Kinoïtes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#footer">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <div id="introduction" class="text-center px-5 mx-auto position-relative z-10">
+        <h1 class="mx-4 mb-3">Participez à des <span class="text-secondary">défis cinéma</span></h1>
+        <p class="mb-4">Rejoignez une communauté ouverte à tous, tournez vos films et découvrez-les en projection gratuite tous les 2 mois</p>
+        <div class="d-flex flex-column flex-md-row gap-3 justify-content-center my-4 py-2">
+            <a class="btnn icon-side" href="https://docs.google.com/forms/d/1nBGHbIvZ_M1HeD_-43czSf_RneI0wGAjpnC9VA3kVjc/edit" target="_blank" data-icon="5">
+                <svg width="17" height="16"  viewBox="0 0 17 16" fill="white">
+                    <use href="icons.svg#clap-cine" />
+                </svg>
+                 Envoyer mon film
+                 </a>
+            <a class="btnn btn-neutral icon-side" href="https://discord.gg/Fr4WCsQ7U5" target="_blank" >
+                <svg width="20" height="15"  viewBox="0 0 20 15" fill="white">
+                    <use href="icons.svg#discord" />
+                </svg>
+                Rejoindre sur Discord
+            </a>
+        </div>
+    </div>
+    <div class="text-center py-0 py-md-3 img-container position-relative z-9">
+        <img id="animated-image" class=" object-fit-cover" src="assets/img/accueil.png" alt="animation photos film"/>
+    </div>
+    <div id="bandeau" class="text-uppercase d-flex flex-row align-items-center overflow-hidden">
+        <span class="flex-shrink-0">Kino grenoble</span>
+        <div class="mx-1 d-flex align-items-center" style="height:42px; width:42px;">
+            <svg class="d-block d-md-none" width="16" height="16" fill="white">
+                <use href="icons.svg#star"/>
+            </svg>
+            <svg  class="d-md-block d-none" width="42" height="42" fill="white">
+                <use href="icons.svg#star" />
+            </svg>
+        </div>
+        <span class="flex-shrink-0">Kino grenoble</span>
+        <div class="mx-1 d-flex align-items-center" style="height:42px; width:42px;">
+            <svg class="d-block d-md-none" width="16" height="16" fill="white">
+                <use href="icons.svg#star"/>
+            </svg>
+            <svg  class="d-md-block d-none" width="42" height="42" fill="white">
+                <use href="icons.svg#star" />
+            </svg>
+        </div>
+        <span class="flex-shrink-0">Kino grenoble</span>
+        <div class="mx-1 d-flex align-items-center" style="height:42px; width:42px;">
+            <svg class="d-block d-md-none" width="16" height="16" fill="white">
+                <use href="icons.svg#star"/>
+            </svg>
+            <svg  class="d-md-block d-none" width="42" height="42" fill="white">
+                <use href="icons.svg#star" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- A Propos -->
+    <div class="container-fluid conteneurPhone">
+        <section id="aPropos" class="container "  >
+            <div class="row g-3 g-md-5 ">
+            <div class="col-md-6 py-3 px-md-5">
+                <h2 class="text-primary mb-md-4 mb-3">
+                    <span class="position-relative">
+                        Notre devise
+                        <div id="surlign" class="d-wrap">
+                            <svg >
+                                <use href="icons.svg#surligne"/>
+                            </svg>
+                        </div>
+                    </span>
+                </h2>
+                
+                <h2>"Faire bien avec rien, faire mieux avec peu, mais le faire maintenant"</h2>
+                <p class="mt-4 mt-md-5">Le Kino Grenoble est une association qui relève des défis cinématographiques depuis mars 2020, en temps limité, souvent sans budget, mais avec beaucoup de créativité.</p>
+                <p>Né à Montréal, le Kino s&apos;est exporté dans le monde entier. Son objectif est d&apos;encourager la création collaborative, que l&apos;on soit débutant ou expérimenté.</p>
+            </div>
+            <div id="aProposRight" class="col-md-6 position-relative">
+                <div class="d-none d-md-block">
+                    <span id="line1"></span>
+                    <span id="line2"></span>
+                    <span id="starWithLines">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.18684 12.34C5.25764 10.2521 4.49062 8.23234 3.05965 6.73859L1.67129 5.28934L3.51042 5.35597C5.6405 5.43315 7.71544 4.6122 9.23808 3.08982L10.5527 1.77539L10.484 3.80113C10.4132 5.88905 11.1803 7.9088 12.6112 9.40255L13.9996 10.8518L12.1605 10.7852C10.0304 10.708 7.95543 11.5289 6.4328 13.0513L5.11814 14.3657L5.18684 12.34Z" stroke="white" stroke-width="2.20965" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span id="ticketsE">
+                        <svg width="222" height="152" class="icon" viewBox="0 0 222 152">
+                            <use href="icons.svg#tickets-etoiles" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="d-flex flex-column gap-3 ">   
+                    <div id="carteFilms" class="card d-flex flex-column justify-content-center text-center bg-light p-3 w-100 py-md-5 ">
+                        <span class="fs-1 text-dark">237</span>
+                        <p>Films réalisés</p>
+                    </div>
+                    <div id="carteDefis" class="card d-flex flex-column justify-content-center text-center bg-neutral p-3 w-100 py-md-5">
+                        <span class="fs-1 text-primary ">38</span>
+                        <p>Défis cinématographiques</p>
+                    </div> 
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Infos essentielles -->
+    <div  class="conteneurPhone container-fluid bg-neutral py-3">
+        <section id="defi" class="container" style="z-index:0;flex: 0 0 1312px; max-width: 1312px;" >
+            <div>
+                <h2 class="mb-4">Faites votre film, on le projette !</h2>
+                <p>Vous avez 2 mois pour créer un court-métrage qui respecte les critères du défi. Une fois terminé, envoyez-le avant la deadline : s&apos;il arrive en retard, il ne sera pas sélectionné. Le film doit durer moins de 5 minutes (génériques inclus) et utiliser une musique libre de droits.Venez ensuite découvrir votre création gratuitement sur grand écran lors de la soirée de projection et invitez vos amis !</p>
+            </div>
+            <div id="cadreGrosClap" class="bg-dark rounded m-auto p-4 mt-4 mt-lg-5 position-relative " >
+                <p class="text-SBlod text-center p-3"> Défi en cours</p>
+                <span id="clapInfos" class="d-none d-md-block  " >
+                    <svg width="172" height="175" viewBox="0 0 172 175">
+                        <use href="icons.svg#gros-clap-etoile"/>
+                    </svg>
+                </span>
+                <div class="p-md-4 d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    <div id="defisLeft" class="d-flex flex-column gap-3 w-100 my-auto" >
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center position-relative z-10">
+                            <svg  width="48" height="48" >
+                                <use href="icons.svg#document"/>
+                            </svg>     
+                            <div>
+                                <span class="text-xs">Thématique imposée</span>
+                                <p class="m-0"><span class="text-primary">Mal et Fils </span>(ou Maléfice ou Malé fils comme vous le voulez ! )</p>
+                            </div>
+                        </div>
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center" >
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <use href="icons.svg#question"/>
+                            </svg>   
+                            <div>
+                                <span class="text-xs">Contraintes optionnelles</span>
+                                <p class="m-0">Aucune</p>
+                            </div>
+                        </div>
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
+                             <svg width="48" height="49" viewBox="0 0 48 49">
+                                <use href="icons.svg#bloc-note"/>
+                            </svg> 
+                            <div>
+                                <span class="text-xs">Deadlines</span>
+                                <p class="m-0">A rendre avant le <span class="text-primary">30 Mars 23h59 </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3 " id="defisRight">
+                        <div class="bg-neutral rounded align-items-center p-3 text-center">
+                            <span class="ms-5">
+                                <svg width="89" height="58">
+                                    <use href="icons.svg#sablier5"/>
+                                </svg> 
+                            </span>
+                            <div>
+                                <span class="text-xs">Durée à respecter</span>
+                                <p class="m-0">Ne doit pas dépasser <span class="text-primary">5 minutes </span>(génériques inclus)</p>
+                            </div>
+                        </div>
+                        <div class="bg-neutral rounded align-items-center p-3 text-center">
+                            <svg width="48" height="48" >
+                                    <use href="icons.svg#musique"/>
+                            </svg>
+                            <div>
+                                <span class="text-xs">Respect des droits d&apos;auteurs !</span>
+                                <p class="m-0">Pour les contenus utilisés (musiques, bruitages, images)</p>
+                            </div>
+                        </div>
+                    </div>
+                     <a id="btnEnvoiFilm2" class="btnn icon-side" href="https://docs.google.com/forms/d/1nBGHbIvZ_M1HeD_-43czSf_RneI0wGAjpnC9VA3kVjc/edit" target="_blank" data-icon="5">
+                        <svg width="17" height="16" fill="white">
+                            <use href="icons.svg#clap-cine" />
+                        </svg>
+                        Envoyer mon film
+                    </a>
+                </div>
+            </div>
+        
+        <!-- soiree projection -->
+        <div id="cadrePopcorn" class="bg-dark rounded mx-auto my-4 p-4 position-relative d-flex flex-column flex-md-row gap-3 " >
+            <span id="popCorn" class="d-none d-lg-block z-1">
+                <svg width="198" height="210" >
+                    <use href="icons.svg#popcorn" />
+                </svg>
+            </span>
+            <!-- hide text on big screen because he has a different position -->
+            <p class="d-block d-md-none text-SBlod text-center  p-3"> Prochaine soirée de projection</p>
+            <img class="mx-md-3 my-auto rounded img-fluid" src="assets/img/projection.png" alt="soiree projection" />
+            <div  class="w-100 ">
+                <p class="d-none d-md-block text-SBlod text-start p-3"> Prochaine soirée de projection</p>
+                <div class="d-flex flex-column gap-3 w-full my-auto position-relative z-5" >
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
+                        <svg width="48" height="49" >
+                            <use href="icons.svg#date" />
+                        </svg>                           
+                        <div>
+                            <span class="text-xs">Date</span>
+                            <p class="m-0">A venir</p>
+                        </div>
+                    </div>
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
+                       <svg width="48" height="48" >
+                            <use href="icons.svg#lieu" />
+                        </svg>  
+                        <div>
+                            <span class="text-xs">Lieu : Maison de la Vie Associative et Citoyenne</span>
+                            <p class="m-0">6 rue Berthe de Boissieaux, 38000 Grenoble</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- equipe ou aide -->
+        <section id="rdzvous" class="container " style="z-index:0;flex: 0 0 1312px; max-width: 1312px;">
+            <div >
+                <h2 class="mb-4">Besoin d&apos;une équipe ou de conseils pour vous lancer ?</h2>
+                <p>KinoGrenoble organise plusieurs rendez-vous et outils pour échanger, trouver une équipe, partager des idées et mener à bien vos projets.</p>
+            </div>
+            <div class="bg-dark rounded m-auto p-3 p-md-5 position-relative d-flex flex-md-row gap-4 mt-4 mt-lg-5" >
+                <div class="d-flex flex-column gap-3 col-12 col-md-6">
+                    <div class="d-flex flex-row align-items-center gap-2">
+                        <svg class="d-none d-md-block" width="32" height="23" fill="white">
+                            <use href="icons.svg#handshake" />
+                        </svg>
+                        <p class="text-SBlod py-3 m-0">Le marché des petits producteurs</p>
+                    </div>
+                    
+                    <p>Il s&apos;agit d&apos;un rendez-vous, à mi parcours du défi, pour échanger autour d&apos;un verre, trouver une équipe, partager des idées et avancer ensemble ! </p>
+                    <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center ">
+                        <svg width="48" height="49" >
+                                <use href="icons.svg#date" />
+                            </svg>
+                            <div>
+                                <span class="text-xs">Date</span>
+                                <p class="m-0">A venir</p>
+                            </div>
+                        </div>
+                        <div class="bg-neutral rounded align-items-center p-4 d-flex flex-md-row flex-column gap-3 text-md-start text-center">
+                            <svg width="48" height="48" >
+                                <use href="icons.svg#lieu" />
+                            </svg>        
+                            <div>
+                                <span class="text-xs">Lieu </span>
+                                <p class="m-0">A venir</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="d-none d-md-block m-auto p-0">
+                    <img class="img-fluid" src="assets/img/marche.png" alt="marche des producteurs" />
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row my-4 gap-4 " >
+                <div id="soireeLeft" class="bg-dark rounded p-4  ">
+                    <div class="d-flex gap-2 align-items-center pb-3">
+                        <svg class="d-none d-md-block" width="32" height="33" fill="white">
+                            <use href="icons.svg#tchin" />
+                        </svg>
+                        <p class="text-SBlod m-0">Une soirée chaque mardi</p>
+                    </div>
+                    <p>Chaque mardi soir, un rendez-vous a lieu dans un bar grenoblois pour échanger. L&apos;heure et le lieu sont annoncés en story sur Instagram et Facebook. </p>
+                    <div class="text-center "> 
+                        <img class="img-fluid" src="assets/img/soiree.png" alt="photo soiree" />   
+                    </div> 
+                    <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-around col-12 py-3 mt-2">
+                        <button class="btnn btn-neutral icon-side w-100">
+                            <svg  width="17" height="17" fill="white">
+                                <use href="icons.svg#instagram" />
+                            </svg>
+                            Rejoindre sur Instagram
+                        </button>
+                        <button class="btnn btn-neutral icon-side w-100">
+                            <svg  width="17" height="17" fill="#E5E5E5">
+                                <use href="icons.svg#facebook" />
+                            </svg>
+                            Rejoindre sur Facebook
+                        </button>
+                    </div>                               
+                </div>
+                <div class="d-flex flex-column gap-4 col-12 col-md-5">
+                    <div class="bg-dark rounded p-4 p-md-5">
+                        <div class="d-flex gap-2 pb-3 gap-2 align-items-center col-md-6">
+                            <svg width="32" height="32" class="icon" viewBox="0 0 20 15" fill="white">
+                                <use href="icons.svg#discord" />
+                            </svg>
+                            <p class="text-SBlod m-0">Discord</p>
+                        </div>
+                        <p>Un espace en ligne pour échanger, collaborer et suivre les défis.</p>
+                        <a class="btnn icon-side" href="https://discord.gg/Fr4WCsQ7U5" target="_blank" >
+                            <svg width="20" height="15" class="icon" viewBox="0 0 20 15" fill="white">
+                                <use href="icons.svg#discord" />
+                            </svg>
+                            Rejoindre sur Discord
+                        </a>       
+                    </div>
+                    <div class="bg-dark rounded p-4 p-md-5">
+                        <div class="d-flex gap-2 align-items-center pb-3">
+                            <svg width="32" height="33" fill="white">
+                                <use href="icons.svg#enveloppe" />
+                            </svg>
+                            <p class="text-SBlod m-0">Newsletter</p>
+                        </div>
+                        <p>Ne manquez rien des nouveautés du KinoGrenoble en vous inscrivant à la newsletter</p>
+                        <div class="d-flex align-item-center gap-3 ">
+                            <input type="text" class="form-control" placeholder="Entrez votre email" aria-label="Email" />
+                            <button class="btnn d-flex align-items-center justify-content-center" id="abonner">
+                                <span class="d-none d-md-block">S&apos;abonner</span>
+                                <div class="d-block d-md-none " style="width: 22px;">
+                                    <svg width="22" height="22" fill="white">
+                                        <use href="icons.svg#arrowUpRight" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- films kino youtube  -->
+        <section id="films" class="bg-dark px-3">
+            <div class="container">
+                <h2>Les films des Kinoites</h2>
+                <div id="cards-section" class="py-5">
+                    <div class="container">
+                    <!-- pour grand écrans -->
+                        <div class="d-none d-md-block">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <!-- 1ere card -->
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi titre imposé
+                                        </div>
+                                        <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Oct/Nov 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- 2eme card -->
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi talent caché
+                                        </div>
+                                        <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Mai/Juin 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3eme card -->
+                                <div class="col-md-4">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi S.O.S
+                                        </div>
+                                        <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Avril 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4eme card -->
+                                <div class="col-md-4">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi Echos
+                                        </div>
+                                        <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Avril 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5eme card -->
+                                <div class="col-md-4">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi S.O.S
+                                        </div>
+                                        <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Avril 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6eme card -->
+                                <div class="col-md-4">
+                                    <div class="card bg-transparent rounded position-relative">
+                                        <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                            Défi titre imposé
+                                        </div>
+                                        <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
+                                        <div class="card-body">
+                                            <p >Oct/Nov 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- carousel for phone size -->
+                        <div class="d-md-none">
+                            <div id="cardsTeamCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#cardsTeamCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <!-- 1ere card -->
+                                    <div class="carousel-item active">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi titre imposé
+                                            </div>
+                                            <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Oct/Nov 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 2eme card -->
+                                    <div class="carousel-item">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi talent caché
+                                            </div>
+                                            <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Mai/Juin 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3eme card -->
+                                    <div class="carousel-item">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi S.O.S
+                                            </div>
+                                            <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Avril 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 4eme card -->
+                                    <div class="carousel-item">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi Echos
+                                            </div>
+                                            <img src="assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Avril 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 5eme card -->
+                                    <div class="carousel-item">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi S.O.S
+                                            </div>
+                                            <img src="assets/img/imgCard2.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Avril 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 6eme card -->
+                                    <div class="carousel-item">
+                                        <div class="card bg-transparent rounded position-relative">
+                                            <div class="bg-secondary text-xs position-absolute tagFilm ">
+                                                Défi titre imposé
+                                            </div>
+                                            <img src="assets/img/imgCard3.png" class="card-img-top" alt="Carte 1">
+                                            <div class="card-body">
+                                                <p >Oct/Nov 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-md-flex justify-content-center ">
+                        <a class="btnn icon-side " href="https://www.youtube.com/channel/UCsAI-rzMsGGmUna8RErlJCQ" target="_blank">
+                            Voir + de film sur youtube
+                            <svg width="19" height="15" fill="white">
+                                <use href="icons.svg#youtube"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>    
+
+
+        <!-- équipe -->
+        <section id="equipe" class="bg-neutral">
+            <div class="container ">
+                <div class="conteneurPhone">
+                    <h2 class="mb-4">Faites connaissances avec l&apos;équipe KinoGrenoble</h2>
+                    <p>Bienvenue dans les coulisses de l&apos;équipe du Kino, où chaque membre contribue à faire vivre les défis de court-métrage à Grenoble . Tous partagent la même envie de rendre la création accessible à tous.</p>
+                </div>            
+                <!-- pour grand écrans -->
+                    <div class="d-none d-md-block mt-5">
+                        <div class="row g-4">
+                            <div class="col-md-3 ">
+                                <!-- 1ere card -->
+                                <div class="card bg-transparent rounded">
+                                    <div class="image-wrapper position-relative jonathan">
+                                        <img src="assets/img/djoe.png" class="card-img-top team" alt="Carte 1">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe jonathanTag">
+                                            Président KinoGrenoble
+                                        </div>
+                                        <div class="jonathanCitation text-center" >
+                                            <p class="text-light"><i>"La musique est un personnage à part entière qui transforme et sublime chaque scène. ”</i></p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            jonathan helme
+                                        </div>
+                                        <p class="text-light">Compositeur de musiques, chef d&apos;orchestre du Kino.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- 2eme card -->
+                                <div class="card bg-transparent rounded">
+                                    <div class="image-wrapper position-relative audrey">
+                                        <img src="assets/img/audrey.png" class="card-img-top team" alt="photo profil Audrey">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe audreyTag">
+                                        Communication
+                                        </div>
+                                        <div class="audreyCitation text-center" >
+                                            <p class="text-light"><i>« Faire des films c&apos;est rendre l&apos;imaginaire partageable. »</i></p>
+                                        </div>
+                                    </div>   
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            audrey maldonado
+                                        </div>
+                                        <p class="text-light">Comédienne, chanteuse, génie de l&apos;organisation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3eme card -->
+                            <div class="col-md-3">
+                                <div class="card bg-transparent rounded ">
+                                    <div class="image-wrapper position-relative simon">
+                                        <img src="assets/img/simon.png" class="card-img-top team" alt="photo profil Simon">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe simonTag">
+                                        Trésorier
+                                        </div>
+                                        <div class="simonCitation text-center" >
+                                            <p class="text-light"><i>“Je porte une attention aux nuances de jeu, cherchant toujours à créer des performances authentiques et captivantes. ”</i></p>
+                                        </div>
+                                    </div>                          
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            simon chastagnol
+                                        </div>
+                                        <p class="text-light">Comédien, débordant d&apos;énergies et d&apos;idées.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4eme card -->
+                            <div class="col-md-3">
+                                <div class="card bg-transparent rounded ">
+                                    <div class="image-wrapper  position-relative max">
+                                        <img src="assets/img/max.png" class="card-img-top team" alt="photo profil Max">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe maxTag">
+                                            Technicien
+                                        </div>
+                                        <div class="maxCitation text-center" >
+                                            <p class="text-light"><i>"J&apos;attache autant d&apos;importance à la mise en scène qu'à l&apos;image, pour créer une ambiance unique et faire vivre des émotions. </i></p>
+                                        </div>
+                                    </div>                                  
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                             maxime favel
+                                        </div>
+                                        <p class="text-light">Vidéaste & électro, passionné de cinéma et de technique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+
+             <!-- carousel for phone size -->
+                <div class="d-md-none mt-4">
+                    <div id="cardsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators pt-2">
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner my-3 ">
+                            <!-- 1ere card -->
+                            <div class="carousel-item active my-2" style="width:292px;" >
+                                <div class="card bg-transparent rounded position-relative pb-4">
+                                    <div class="image-wrapper position-relative jonathan">
+                                        <img src="assets/img/djoe.png" class="card-img-top team" alt="Carte 1">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe jonathanTag">
+                                            Président KinoGrenoble
+                                        </div>
+                                        <div class="jonathanCitation text-center" >
+                                            <p class="text-light"><i>"La musique est un personnage à part entière qui transforme et sublime chaque scène. ”</i></p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            jonathan helme
+                                        </div>
+                                        <p class="text-light">Compositeur de musiques, chef d&apos;orchestre du Kino.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2eme card -->
+                            <div class="carousel-item my-2" style="width:292px;">
+                                <div class="card bg-transparent rounded pb-4">
+                                    <div class="image-wrapper position-relative audrey">
+                                        <img src="assets/img/audrey.png" class="card-img-top team" alt="photo profil Audrey">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe audreyTag">
+                                        Communication
+                                        </div>
+                                        <div class="audreyCitation text-center" >
+                                            <p class="text-light"><i>« Faire des films c&apos;est rendre l&apos;imaginaire partageable. »</i></p>
+                                        </div>
+                                    </div>                                 
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            audrey maldonado
+                                        </div>
+                                        <p class="text-light">Comédienne, chanteuse, génie de l&apos;organisation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3eme card -->
+                            <div class="carousel-item my-2" style="width:292px;">
+                                <div class="card bg-transparent rounded pb-4">
+                                    <div class="image-wrapper position-relative simon">
+                                        <img src="assets/img/simon.png" class="card-img-top team" alt="photo profil Simon">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe simonTag">
+                                        Trésorier
+                                        </div>
+                                        <div class="simonCitation text-center" >
+                                            <p class="text-light"><i>“Je porte une attention aux nuances de jeu, cherchant toujours à créer des performances authentiques et captivantes. ”</i></p>
+                                        </div>
+                                    </div>        
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            simon chastagnol
+                                        </div>
+                                        <p class="text-light">Comédien, débordant d&apos;énergies et d&apos;idées.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4eme card -->
+                            <div class="carousel-item my-2 " style="width:292px;">
+                                <div class="card bg-transparent rounded pb-4" >
+                                    <div class="image-wrapper  position-relative max">
+                                        <img src="assets/img/max.png" class="card-img-top team" alt="photo profil Max">
+                                        <div class="bg-secondary text-xs position-absolute tagEquipe maxTag">
+                                            Technicien
+                                        </div>
+                                        <div class="maxCitation text-center" >
+                                            <p class="text-light"><i>"J&apos;attache autant d&apos;importance à la mise en scène qu'à l&apos;image, pour créer une ambiance unique et faire vivre des émotions. </i></p>
+                                        </div>
+                                    </div>   
+                                               
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row text-xs text-uppercase text-primary my-2 align-items-center" >
+                                            <svg class=" me-2" width="24" height="24">
+                                                <use href="icons.svg#star"/>
+                                            </svg>
+                                            maxime favel
+                                        </div>
+                                        <p class="text-light">Vidéaste & électro, passionné de cinéma et de technique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+
+
+        <!-- footer -->
+        <section id="footer" class="position-relative">
+            <div class="container">
+            <div id="ellipseFooter"></div>
+            <footer class="d-flex flex-column flex-md-row align-item-center">
+                <div class="col-md-4 mb-3 my-md-auto text-uppercase">
+                        <img src="assets/img/logo.png" alt="logo Kino" >
+                        KINO grenoble
+                </div>
+                <div class="col-md-8 mb-3">
+                    <div class="d-flex flex-column">
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <h5>Kinogrenoble</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#aPropos" class="nav-link p-0 text-muted">A propos</a></li>
+                                    <li class="nav-item mb-2"><a href="#defi" class="nav-link p-0 text-muted">Défi en cours</a></li>
+                                    <li class="nav-item mb-2"><a href="#films" class="nav-link p-0 text-muted">Les films des kinoites</a></li>
+                                    <li class="nav-item mb-2"><a href="#equipe" class="nav-link p-0 text-muted">L&apos;équipe</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5>Ressources</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News</a></li>    
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5>Légal</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mentions Légales</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politique de confidentialité</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-neutral-400 pt-3 d-wrap">
+                            <div class="d-flex flex-md-row flex-column justify-content-between">
+                                <h5 >Contact</h5>
+                                <p >contact[arobase]kinogrenoble[point]com</p>
+                            </div>
+                            <div class="d-flex flex-md-row flex-column justify-content-between">
+                                <h5 >Suivez-nous sur</h5>
+                                <div class=" d-flex justify-content-start justify-content-md-end ">
+                                    <a href="https://www.facebook.com/KinoGrenoble/" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3" width="24" height="24" >
+                                        <use href="icons.svg#facebook" />
+                                    </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/kino.grenoble" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3"  width="24" height="24" >
+                                        <use href="icons.svg#instagram" />
+                                    </svg>
+                                    </a>
+                                    <a href="https://discord.gg/Fr4WCsQ7U5" class="text-neutral-300" target="_blank">
+                                    <svg class="me-3" width="24" height="24"  >
+                                        <use href="icons.svg#discord" />
+                                    </svg>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCsAI-rzMsGGmUna8RErlJC" class="text-neutral-300" target="_blank">
+                                    <svg  width="24" height="24" >
+                                        <use href="icons.svg#youtube"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </footer>
+            </div>
+        </section>
+    </div>
+    <!-- lien package(popper+bootstrap) js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- lien code js -->
+    <script src="./src/index.js"></script>
+</body>
+</html>
