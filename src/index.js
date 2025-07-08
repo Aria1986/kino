@@ -1,5 +1,6 @@
 import {Film} from "./classes/Film.js";
-import {getLatestVideos} from "./youtube.js"
+import {getLatestVideos} from "./youtube.js";
+import './styles/style.css';
 
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('menu');
