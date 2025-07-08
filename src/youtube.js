@@ -34,4 +34,3 @@ export async function getLatestVideos(channelId, maxResults = 6) {
 }
 
 
-getLatestVideos();

@@ -156,14 +156,26 @@ menuItems.forEach(item => {
 });
 
 // Fonction utilitaire pour debug (à supprimer en production)
-function debugCurrentSection() {
-    window.addEventListener('scroll', throttle(() => {
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            console.log(`${section.id}: top=${Math.round(rect.top)}, bottom=${Math.round(rect.bottom)}`);
-        });
-    }, 500));
-}
+// function debugCurrentSection() {
+//     window.addEventListener('scroll', throttle(() => {
+//         sections.forEach(section => {
+//             const rect = section.getBoundingClientRect();
+//             console.log(`${section.id}: top=${Math.round(rect.top)}, bottom=${Math.round(rect.bottom)}`);
+//         });
+//     }, 500));
+// }
 
-// Décommentez pour debug
-// debugCurrentSection();
+//youtube
+ const cartesMoviesMobile = document.getElementById('cartesMoviesMobile');
+ const cartesMoviesDesktop = document.getElementById('cartesMoviesDesktop');
+
+function afficherSixDernieresVideos(){
+    let videos = getLatestVideos();
+    videos.forEach(function(video){
+        let film = new Film(video.id,video.title, video.description, video.publishedAt, video.thumbnail, video.url )
+        console.log(video.thumbnail);
+        cartesMoviesDesktop.appendChild(film.desktopCard)
+        cartesMoviesMobile.appendChild(film.phoneCard)
+
+    }) 
+}

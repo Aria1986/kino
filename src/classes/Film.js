@@ -6,7 +6,7 @@ export class Film{
     _imgUrl;
     _url;
 
-    constructor(id,title,description, date, img, url){
+    constructor(id, title,description, date, img, url){
         this._id=id;
         this._title=title;
         this._description=description;
@@ -88,5 +88,33 @@ export class Film{
         this._url = newUrl;
     }
 
-     get content() {}
+    get desktopCard() {
+        const div = document.createElement("div");
+        div.classList.add("col-md-4");
+
+        // <div class="col-md-4">
+        //     <div class="card bg-transparent rounded position-relative">
+        //         <div class="bg-secondary text-xs position-absolute tagFilm ">
+        //             Défi titre imposé
+        //         </div>
+        //         <img src="src/assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+        //         <div class="card-body">
+        //             <p >Oct/Nov 2024</p>
+        //         </div>
+        //     </div>
+        // </div>
+    }
+    get phoneCard() {
+        // <div class="carousel-item active">
+        //     <div class="card bg-transparent rounded position-relative">
+        //          <div class="bg-secondary text-xs position-absolute tagFilm ">
+        //              Défi titre imposé
+        //          </div>
+        //          <img src="src/assets/img/imgCard1.png" class="card-img-top" alt="Carte 1">
+        //          <div class="card-body">
+        //              <p >Oct/Nov 2024</p>
+        //          </div>
+        //      </div>
+        //  </div>
+    }
 }
