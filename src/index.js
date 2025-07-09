@@ -169,13 +169,24 @@ menuItems.forEach(item => {
  const cartesMoviesMobile = document.getElementById('cartesMoviesMobile');
  const cartesMoviesDesktop = document.getElementById('cartesMoviesDesktop');
 
-function afficherSixDernieresVideos(){
-    let videos = getLatestVideos();
-    videos.forEach(function(video){
-        let film = new Film(video.id,video.title, video.description, video.publishedAt, video.thumbnail, video.url )
-        console.log(video.thumbnail);
-        cartesMoviesDesktop.appendChild(film.desktopCard)
-        cartesMoviesMobile.appendChild(film.phoneCard)
-
-    }) 
+async function afficherSixDernieresVideos(){
+    try{
+        let videos = await getLatestVideos();
+        if(Array.isArray(videos)){
+            videos.forEach(function(video){
+                let film = new Film(video.id,video.title, video.description, video.publishedAt, video.thumbnail, video.url )
+                console.log(video.thumbnail);
+                console.log(film.imgUrl);
+                cartesMoviesDesktop.appendChild(film.desktopCard)
+                cartesMoviesMobile.appendChild(film.phoneCard)
+            }) 
+        }
+        else {
+            console.error("Erreur : getLatestVideos n'a pas retourné un tableau. Type:", typeof videos, "Contenu:", videos);
+        }
+    }
+    catch(error){
+        console.error("Erreur lors de l'affichage des vidéos", error);
+    }
 }
+afficherSixDernieresVideos()
