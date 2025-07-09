@@ -175,8 +175,6 @@ async function afficherSixDernieresVideos(){
         if(Array.isArray(videos)){
             videos.forEach(function(video){
                 let film = new Film(video.id,video.title, video.description, video.publishedAt, video.thumbnail, video.url )
-                console.log(video.thumbnail);
-                console.log(film.imgUrl);
                 cartesMoviesDesktop.appendChild(film.desktopCard)
                 cartesMoviesMobile.appendChild(film.phoneCard)
             }) 
@@ -184,6 +182,14 @@ async function afficherSixDernieresVideos(){
         else {
             console.error("Erreur : getLatestVideos n'a pas retourné un tableau. Type:", typeof videos, "Contenu:", videos);
         }
+        //ajouter active au 1er element du carousel
+        const premiereDivEnfant = cartesMoviesMobile.firstElementChild;
+        // Vérifiez si un premier enfant existe et est bien une div
+        if (premiereDivEnfant && premiereDivEnfant.tagName === 'DIV') {
+            premiereDivEnfant.classList.add('active');
+        } else {
+            console.warn("Le premier enfant de 'cartesMoviesMobile' n'est pas une div ou n'existe pas.");
+    }
     }
     catch(error){
         console.error("Erreur lors de l'affichage des vidéos", error);

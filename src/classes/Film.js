@@ -5,13 +5,16 @@ export class Film{
     _date;
     _imgUrl;
     _url;
+    _dateFormate;
 
     constructor(id, title,description, date, img, url){
         this._id=id;
         this._title=title;
         this._description=description;
+        this._date=date;
         this.imgUrl=img;
         this._url=url;
+        this._dateFormate = formaterDateEnFrancais(this._date)
     }
     get id() {
         return this._id;
@@ -99,7 +102,7 @@ export class Film{
                 </div>
                 <img src="${this._imgUrl}" class="card-img-top" alt="Carte 1">
                 <div class="card-body">
-                    <p >${this._date}</p>
+                    <p >${this._dateFormate}</p>
                 </div>
             </div>`
         div.innerHTML = markup;
@@ -115,11 +118,27 @@ export class Film{
                  </div>
                  <img src="${this._imgUrl}" class="card-img-top" alt="img derniers films">
                  <div class="card-body">
-                     <p >${this._date}</p>
+                     <p >${this._dateFormate}</p>
                  </div>
              </div>`
         div.innerHTML = markupPhone;
         return div;
    
     }
+}
+function formaterDateEnFrancais(dateString) {
+    const date = new Date(dateString);
+    // Options pour le formatage : mois en toutes lettres et année numérique
+     if (isNaN(date.getTime())) { // Check if the date is invalid
+        console.error("Erreur: La date est invalide. Vérifiez l'entrée ci-dessus.");
+        return "Date invalide"; // Ou toute autre chaîne d'erreur appropriée
+    }
+    const options = {
+        year: 'numeric', // L'année en chiffres (ex: 2025)
+        month: 'long'    // Le mois en toutes lettres (ex: juin)
+    };
+
+    const dateFormatee = date.toLocaleDateString('fr-FR', options);
+
+    return dateFormatee;
 }
